@@ -92,5 +92,25 @@
 }
 
 /* story-section */
+.story-section{
+    background-color: #283a97;
+}
 
+.read-more-btn{
+    max-width: 186px;
+    width: 100%;
+    height: 40px;
+
+}
 /* story-section */
+
+.main-title{
+    font-size: 65px;
+    font-weight: 600;
+}
+.font-blue-custom{
+    color: #283a97;
+}
+.bg-blue-custom{
+    background-color: #283a97;
+}
