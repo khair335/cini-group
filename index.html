@@ -7,7 +7,6 @@
     <title>Cini Group</title>
     <link href="./assets/styles/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
@@ -19,7 +18,7 @@
     <!-- Header Section -->
     <header class="relative bg-black py-8 min-h-[100vh] h-[100vh]"
         style="background-image: url('./assets/Images/HomeHeroBack@2x.jpg');">
-        <div class="max-w-[1200px] mx-auto">
+        <div class="max-w-7xl mx-auto">
             <div class="container mx-auto w-full flex justify-between items-center px-6">
                 <div class="flex items-center space-x-4">
                     <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
@@ -38,14 +37,14 @@
                 </button>
             </div>
             <div class="pt-16">
-                <div class="slider mx-auto max-w-[1200px] " style="max-width: 1200px;">
+                <div class="slider mx-auto max-w-7xl ">
                     <div class=" ">
                         <div class="flex gap-14">
                             <div class="flex-1" style="max-width: 40%;">
                                 <img src="./assets/Images/HomeHeroSlider1@2x.jpg" alt="Hands" class="w-full"
                                     style="border-radius: 30px;" />
                                 <button
-                                    class="mt-6 bg-blue-600 py-2 px-6 rounded text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">Discover
+                                    class="mt-6 bg-blue-800 py-2 px-6  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">Discover
                                     more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-4" /></button>
                             </div>
                             <div class="flex-1">
@@ -60,7 +59,7 @@
                                 <img src="./assets/Images/HomeHeroSlider1@2x.jpg" alt="Hands" class="w-full"
                                     style="border-radius: 30px;" />
                                 <button
-                                    class="mt-6 bg-blue-600 py-2 px-6 rounded text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">Discover
+                                    class="mt-6 bg-blue-800 py-2 px-6  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">Discover
                                     more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-4" /></button>
                             </div>
                             <div class="flex-1">
@@ -78,19 +77,41 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav class="bg-black py-4">
-        <div class="container mx-auto flex justify-center space-x-8 text-gray-300">
-            <a href="#" class="hover:text-white border-l  pl-4">Story</a>
-            <a href="#" class="hover:text-white border-l pl-4 ">Brands</a>
-            <a href="#" class="hover:text-white border-l pl-4 ">News</a>
-            <a href="#" class="hover:text-white border-l pl-4 ">Careers</a>
-            <a href="#" class="hover:text-white border-l pl-4 ">Reach us</a>
+    <div class="bg-black py-4  w-full mx-auto">
+        <div class="container mx-auto max-w-7xl flex justify-center space-x-8 text-white">
+            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+
+                <p class="text-3xl font-bold">Story</p>
+                <p class="text-xl font-semibold">01 <span class="text-base text-blue-800">/05</span></p>
+            </a>
+            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+
+
+                <p class="text-3xl font-bold">Brands</p>
+                <p class="text-xl font-semibold">02 <span class="text-base text-blue-800">/05</span></p>
+            </a>
+            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+
+                <p class="text-3xl font-bold">News</p>
+                <p class="text-xl font-semibold">03 <span class="text-base text-blue-800">/05</span></p>
+            </a>
+            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+
+                <p class="text-3xl font-bold">Careers</p>
+                <p class="text-xl font-semibold">04<span class="text-base text-blue-800">/05</span></p>
+            </a>
+            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+
+                <p class="text-3xl font-bold">Reach us</p>
+                <p class="text-xl font-semibold">05<span class="text-base text-blue-800">/05</span></p>
+            </a>
+
         </div>
-    </nav>
+    </div>
 
     <!-- Story Section -->
-    <section class="bg-blue-800 py-16">
-        <div class="container mx-auto px-6">
+    <section class="bg-blue-800 py-16 story-section">
+        <div class="max-w-7xl mx-auto px-6 flex">
             <div class="text-center">
                 <h2 class="text-3xl font-bold">Cini Group’s story.</h2>
                 <p class="mt-4 max-w-2xl mx-auto text-gray-300">Sed ut perspiciatis unde omnis iste natus error sit
@@ -99,7 +120,13 @@
                 <p class="mt-4 max-w-2xl mx-auto text-gray-300">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                     aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                 </p>
-                <button class="mt-6 bg-blue-600 py-2 px-6 rounded text-white">Read more</button>
+                <button
+                                    class="mt-6 bg-blue-800 py-2 px-6  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">Discover
+                                    more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-4" /></button>
+            </div>
+
+            <div>
+                    <img src="./assets/Images/HomeBanner2@2x.png" alt="" srcset="">
             </div>
         </div>
     </section>
