@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Heavy.eot');
+    src: url('AvenirNext-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Heavy.woff2') format('woff2'),
+        url('AvenirNext-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Bold.eot');
+    src: url('AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Bold.woff2') format('woff2'),
+        url('AvenirNext-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Medium.eot');
+    src: url('AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Medium.woff2') format('woff2'),
+        url('AvenirNext-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Demi';
+    src: url('AvenirNext-DemiBold.eot');
+    src: url('AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-DemiBold.woff2') format('woff2'),
+        url('AvenirNext-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Regular.eot');
+    src: url('AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Regular.woff2') format('woff2'),
+        url('AvenirNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

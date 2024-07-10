@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Heavy.eot');
+    src: url('AvenirNext-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Heavy.woff2') format('woff2'),
+        url('AvenirNext-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Bold.eot');
+    src: url('AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Bold.woff2') format('woff2'),
+        url('AvenirNext-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Medium.eot');
+    src: url('AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Medium.woff2') format('woff2'),
+        url('AvenirNext-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Demi';
+    src: url('AvenirNext-DemiBold.eot');
+    src: url('AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-DemiBold.woff2') format('woff2'),
+        url('AvenirNext-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('AvenirNext-Regular.eot');
+    src: url('AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNext-Regular.woff2') format('woff2'),
+        url('AvenirNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.slick-vertical .slick-slide {
+    height: auto !important;
+}
+
+.slick-prev{
+    left: unset !important;
+    right: -25px ;
+    top: 45% !important;
+}
+
+.slick-next{
+    top: 55% !important;
+}
+
+.slick-next:before{
+    content: '' !important;
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Icons' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Ccircle class='st0' cx='16' cy='16' r='13' fill='%23ffffff'/%3E%3Cpolyline class='st0' points='18,20.2 13.8,16 18,11.8 ' fill='%23ffffff'/%3E%3C/svg%3E") !important;
+}
+.slick-prev:before{
+    content: '' !important;
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Icons' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Ccircle class='st0' cx='16' cy='16' r='13' fill='%23ffffff'/%3E%3Cpolyline class='st0' points='18,20.2 13.8,16 18,11.8 ' fill='%23ffffff'/%3E%3C/svg%3E") !important;
+}
