@@ -62,18 +62,18 @@
     height: auto !important;
 }
 
-.slick-prev{
+.slick-prev {
     left: unset !important;
-    right: -25px ;
+    right: -25px;
     top: 30% !important;
 
 }
 
-.slick-next{
+.slick-next {
     top: 42% !important;
 }
 
-.slick-next:before{
+.slick-next:before {
     transform: rotate(270deg) !important;
     content: '' !important;
     width: 36px;
@@ -82,7 +82,8 @@
     background-size: 36px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Icons' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Ccircle class='st0' cx='16' cy='16' r='13' fill='%23ffffff'/%3E%3Cpolyline class='st0' points='18,20.2 13.8,16 18,11.8 ' fill='%23ffffff'/%3E%3C/svg%3E") !important;
 }
-.slick-prev:before{
+
+.slick-prev:before {
     transform: rotate(90deg) !important;
     content: '' !important;
     width: 36px;
@@ -91,26 +92,113 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Icons' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Ccircle class='st0' cx='16' cy='16' r='13' fill='%23ffffff'/%3E%3Cpolyline class='st0' points='18,20.2 13.8,16 18,11.8 ' fill='%23ffffff'/%3E%3C/svg%3E") !important;
 }
 
-/* story-section */
-.story-section{
-    background-color: #283a97;
+/* navigation-section */
+.navigation-section {
+background: rgb(0,0,0);
+/* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3393732492997199) 100%); */
+
+
 }
 
-.read-more-btn{
+/* navigation-section */
+/* story-section */
+.story-section {
+    /* background-color: #283a97; */
+    background-image: url('/assets/Images/HomeBanner2@2x.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.read-more-btn {
     max-width: 186px;
     width: 100%;
     height: 40px;
 
 }
+
 /* story-section */
 
-.main-title{
+.main-title {
     font-size: 65px;
-    font-weight: 600;
+    font-weight: 700;
 }
-.font-blue-custom{
+
+.font-blue-custom {
     color: #283a97;
 }
-.bg-blue-custom{
+
+.bg-blue-custom {
     background-color: #283a97;
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    max-width: 180px;
+    height: 44px;
+    width: 100%;
+    background-color: white;
+    color: #003897;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-toggle svg {
+    margin-left: 10px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(40, 58, 151, 1);
+    min-width: 160px;
+    max-width: 180px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 24px;
+    margin-top: 16px;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-menu a:hover .w-10 {
+    display: block;
+}
+
+.dropdown-menu a:hover {}
+
+.show {
+    display: block;
+}
+/*
+@media (max-width: 1380px) {
+    .main-title {
+    font-size: 50px;
+
+}
+
+.story-section {
+
+    background-position: 154%;
+
+}
+} */
