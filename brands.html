@@ -11,31 +11,95 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
   <link href="./assets/styles/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "custom-blue": '#283a97',
+            "custom-blue-2": '#5160a9',
+            "custom-gray": '#d1dade',
+            "custom-gray-2": '#f7f7f7',
+          },
+          screens: {
+
+          },
+          maxWidth: {
+            '2px': '2px',
+            '120px': '120px',
+            '160px': '160px',
+            '180px': '180px',
+            '190px': '190px',
+            '400px': '400px',
+            '650px': '650px',
+            '660px': '660px',
+            '700px': '700px',
+            '930px': '930px',
+            '1200px': '1200px',
+            // You can add more custom max-width values here if needed
+          },
+          borderRadius: {
+            'full': '9999px',
+            '30px': '30px',
+            // Add more custom border-radius values as needed
+          },
+          spacing: {
+            '20%': '20%',
+            '40%': '40%',
+            '60%': '60%',
+            '70%': '70%',
+            '73%': '73%',
+            '75%': '75%',
+            '90%': '90%',
+            '1.5': '6px'
+
+            // Add more custom spacing values as needed
+          },
+          fontSize: {
+
+            '60px': '60px',
+            '70px': ['4.375rem', '1.2'],
+            // Add more custom font sizes as needed
+          },
+          lineHeight: {
+            '1': '1',
+            '1.2': '1.2',
+          },
+        }
+      }
+    }
+  </script>s
 </head>
 
 <body class="bg-gray-50">
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="">
-        <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
+  <header class="bg-white text-white p-4 relative z-10">
+    <div class="max-w-700px lg:max-w-930px xl:max-w-1200px mx-auto flex justify-between items-center relative">
+      <a href="#">
+        <img src="./assets/CiniLogoBlue.svg" alt="Cini Group Logo" class="h-10">
       </a>
-      <nav class="space-x-4 flex flex-1 justify-end items-center">
+      <nav
+        class="space-x-4 hidden lg:flex flex-1 justify-end items-center nav-links absolute top-10 lg:top-[unset] right-0 lg:right-[unset] lg:relative  bg-white shadow-xl lg:shadow-none">
         <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Story</a>
+          class="text-xl text-[#003897] font-medium border-transparent border-2 hover:border-b-2 hover:border-b-[#003897] transition duration-300 ease-in-out">Story</a>
         <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Brands</a>
+          class="text-xl text-[#003897] font-medium border-transparent border-2 hover:border-b-2 hover:border-b-[#003897] transition duration-300 ease-in-out">Brands</a>
         <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">News</a>
+          class="text-xl text-[#003897] font-medium border-transparent border-2 hover:border-b-2 hover:border-b-[#003897] transition duration-300 ease-in-out">News</a>
         <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Careers</a>
+          class="text-xl text-[#003897] font-medium border-transparent border-2 hover:border-b-2 hover:border-b-[#003897] transition duration-300 ease-in-out">Careers</a>
         <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Reach
+          class="text-xl text-[#003897] font-medium border-transparent border-2 hover:border-b-2 hover:border-b-[#003897] transition duration-300 ease-in-out">Reach
           us</a>
-
-        <div class="dropdown max-w-[180px] w-full">
-          <button class="dropdown-toggle max-w-[180px] w-full h-11 justify-center">
+        <div class="dropdown max-w-180px w-full">
+          <button style="border: 2px solid #003897;"
+            class="dropdown-toggle border-2 border-[#003897] max-w-180px w-full h-11 justify-center">
             Catalogues
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(40,58,151,1)">
               <path d="M12 14L8 10H16L12 14Z"></path>
@@ -43,48 +107,77 @@
           </button>
           <div class="dropdown-menu">
             <a class="flex items-center justify-between group relative" href="#">
-              <div class=" transition-colors duration-300">Catalogue 1</div>
+              <div class="transition-colors duration-300">Catalogue 1</div>
               <div
-                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                class="group-hover:w-10 w-0 h-2px bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
               </div>
             </a>
             <a class="flex items-center justify-between group relative" href="#">
-              <div class=" transition-colors duration-300">Catalogue 2</div>
+              <div class="transition-colors duration-300">Catalogue 2</div>
               <div
-                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                class="group-hover:w-10 w-0 h-2px bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
               </div>
             </a>
             <a class="flex items-center justify-between group relative" href="#">
-              <div class=" transition-colors duration-300">Catalogue 3</div>
+              <div class="transition-colors duration-300">Catalogue 3</div>
               <div
-                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                class="group-hover:w-10 w-0 h-2px bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
               </div>
             </a>
-
           </div>
-
         </div>
       </nav>
-
+      <button class="hamburger-menu text-[#003897] block lg:hidden focus:outline-none relative z-10"
+        onclick="toggleMenu()">
+        <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+          fill="currentColor">
+          <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+        </svg>
+        <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+          fill="currentColor">
+          <path
+            d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12l7.7929 7.7928L19.793 21.2071 12.0001 13.4142 4.20718 21.2071 2.79297 19.7928 10.5859 12z">
+          </path>
+        </svg>
+      </button>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-blue-800 text-white text-center py-20">
-    <div class="container mx-auto">
-      <h1 class="text-4xl font-bold">Lorem ipsum dolor sit amet consectetur.</h1>
+  <section class="curved-section">
+    <div class="curve-top">
+      <div class="contet-wrapper relative">
+
+        <div class="max-w-700px lg:max-w-930px  xl:max-w-1200px w-full mx-auto">
+
+          <h1 class="text-3xl md:text-6xl text-left  max-w-[290px] md:max-w-400px w-full font-bold px-4 md:px-0">Lorem
+            ipsum dolor sit amet consectetur.</h1>
+
+          <div class="absolute bottom-[-60%] right-5 md:right-0">
+            <div class="flex flex-col gap-2">
+              <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="hover:text-white"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Main Content -->
   <main class="container mx-auto my-12">
-    <div class="max-w-[1132px] w-full mx-auto">
-      <div class="flex justify-center gap-16">
-        <div class="rounded-2xl max-w-[550px] w-full bg-[#f7f7f7]">
-          <img class="rounded-t-2xl" src="/assets/Images/gradient-3d-fluid-background.jpg" alt="Company profile"
-            class="w-full h-64 object-cover">
-          <div class="p-10">
-            <h2 class="text-[52px] leading-[56px] font-bold font-blue-custom pb-8 ">Company <br> profile.</h2>
+    <div class="max-w-700px lg:max-w-930px  xl:max-w-1200px w-full mx-auto px-10">
+      <div class="flex flex-col lg:flex-row justify-center gap-8 xl:gap-16">
+
+        <div class="rounded-2xl max-w-full lg:max-w-[45%] xl:max-w-[40%] w-full bg-custom-gray-2">
+          <img class="rounded-t-2xl w-full h-64 object-cover" src="/assets/Images/gradient-3d-fluid-background.jpg"
+            alt="Company profile">
+          <div class="p-7 xl:p-10">
+            <h2
+              class="text-[40px] xl:text-[52px] leading-[44px] xl:leading-[56px] font-bold font-blue-custom pb-6 xl:pb-8 ">
+              Company <br class="hidden lg:block"> profile.</h2>
             <p class="text-black text-sm  mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium
               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -106,11 +199,13 @@
               aliquam quaerat voluptatem.</p>
           </div>
         </div>
-        <div class="rounded-2xl max-w-[550px] w-full bg-[#f7f7f7]">
-          <img class="rounded-t-2xl" src="/assets/Images/gradient-3d-fluid-background.jpg" alt="Company profile"
-            class="w-full h-64 object-cover">
-          <div class="p-10">
-            <h2 class="text-[52px] leading-[56px] font-bold font-blue-custom pb-8 ">Manufacturing planta.</h2>
+        <div class="rounded-2xl max-w-full lg:max-w-[45%] xl:max-w-[40%] w-full bg-custom-gray-2">
+          <img class="rounded-t-2xl w-full h-64 object-cover" src="/assets/Images/gradient-3d-fluid-background.jpg"
+            alt="Company profile">
+          <div class="p-7 xl:p-10">
+            <h2
+              class="text-[40px] xl:text-[52px] leading-[44px] xl:leading-[56px] font-bold font-blue-custom pb-6 xl:pb-8 ">
+              Manufacturing planta.</h2>
             <p class="text-black text-sm  mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium
               doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -132,14 +227,17 @@
               aliquam quaerat voluptatem.</p>
           </div>
         </div>
+
 
       </div>
-      <div class="mt-14 rounded-2xl bg-[#f7f7f7] flex ">
-        <img class="rounded-l-2xl max-w-[400px]  w-full object-cover"
+      <div
+        class="mt-14 rounded-2xl bg-custom-gray-2 flex flex-col md:flex-row max-w-[797px] xl:max-w-[960px] w-full mx-auto">
+        <img class="rounded-t-2xl md:rounded-l-2xl max-w-full md:max-w-[230px] lg:max-w-400px  w-full object-cover"
           src="/assets/Images/dark-light-blue-aquarelle-background.jpg" alt="">
 
-        <div class="p-10">
-          <h2 class="text-[52px] leading-[56px] font-bold font-blue-custom pb-8">Distribution</h2>
+        <div class="p-7 xl:p-10 ">
+          <h2 class="text-[40px] xl:text-[52px] leading-[44px] xl:leading-[56px] font-bold font-blue-custom pb-8">
+            Distribution</h2>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
@@ -149,7 +247,7 @@
             Neno enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
             dolores eos qui ratione voluptatem sequi nesciunt.</p>
           <button
-            class="bg-[#283a97] mt-10 border-[1px] border-[#283a97] text-white max-w-[160px] h-10 rounded-full hover:bg-white hover:text-[#283a97] hover:border-[#283a97] flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
+            class="bg-custom-blue mt-10 border-[1px] border-custom-blue text-white max-w-160px h-10 rounded-full hover:bg-white hover:text-custom-blue hover:border-custom-blue flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
             <p class="-mt-1"> Apply
               now
               <span class="text-lg pl-3">&rarr;</span>
@@ -158,61 +256,7 @@
 
         </div>
       </div>
-      <div class="flex justify-center gap-16 mt-14">
-        <div class="rounded-2xl max-w-[550px] w-full bg-[#f7f7f7]">
-          <img class="rounded-t-2xl" src="/assets/Images/gradient-3d-fluid-background.jpg" alt="Company profile"
-            class="w-full h-64 object-cover">
-          <div class="p-10">
-            <h2 class="text-[52px] leading-[56px] font-bold font-blue-custom pb-8 ">Company <br> profile.</h2>
-            <p class="text-black text-sm  mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium
-              doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-              fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-              qui
-              dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-              incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-              rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-              magnam
-              aliquam quaerat voluptatem.</p>
-          </div>
-        </div>
-        <div class="rounded-2xl max-w-[550px] w-full bg-[#f7f7f7]">
-          <img class="rounded-t-2xl" src="/assets/Images/gradient-3d-fluid-background.jpg" alt="Company profile"
-            class="w-full h-64 object-cover">
-          <div class="p-10">
-            <h2 class="text-[52px] leading-[56px] font-bold font-blue-custom pb-8 ">Manufacturing planta.</h2>
-            <p class="text-black text-sm  mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium
-              doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-              fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-              qui
-              dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-              incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-              rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-              explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-              magnam
-              aliquam quaerat voluptatem.</p>
-          </div>
-        </div>
 
-      </div>
     </div>
 
 
@@ -220,8 +264,8 @@
 
   <!-- Brands Section -->
   <section class="bg-white py-12 ">
-    <div class="max-w-[1132px] w-full mx-auto text-center">
-      <h2 class="main-title text-[#283a97] text-left mb-6">Brands</h2>
+    <div class="max-w-700px lg:max-w-930px  xl:max-w-1200px px-10 w-full mx-auto text-center">
+      <h2 class="main-title text-custom-blue text-left mb-6">Brands</h2>
       <div class="flex flex-wrap justify-center items-center gap-y-10">
         <img src="/assets/Logos/BrandLamb@2x.png" alt="Brand 1" class="h-20 w-[30%] object-contain mx-4 my-2">
         <img src="/assets/Logos/BrandYuka@2x.png" alt="Brand 1" class="h-20 w-[30%] object-contain mx-4 my-2">
@@ -236,11 +280,11 @@
 
   <!-- Products Section -->
   <section class="bg-blue-900 text-white py-12">
-    <div class="max-w-[1132px] w-full mx-auto">
+    <div class="max-w-700px lg:max-w-930px  xl:max-w-1200px px-10 w-full mx-auto">
       <h2 class="main-title text-[#fff] text-left mb-6">Products</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+      <div class="flex flex-wrap gap-y-3">
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.57 54.66">
               <g id="Home_page" data-name="Home page">
@@ -282,7 +326,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.35 47.48">
               <defs>
@@ -334,7 +378,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.36 47.57">
               <defs>
@@ -386,7 +430,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.55 47.73">
               <defs>
@@ -438,7 +482,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.55 48.03">
               <defs>
@@ -490,21 +534,22 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
-           <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.55 43.67">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Home_page" data-name="Home page">
-    <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out" d="M10.79,33.6c.16-1.81.14-3.65.5-5.41,1.02-4.93,5.2-8.8,10.17-9.61,4.6-.75,7.18-3.3,7.99-7.88C30.56,4.45,35.66.1,42,.02c1.91-.03,3.82-.02,5.73,0,3.83.05,6.71,2.83,6.77,6.66.04,2.56.11,5.15-.17,7.69-.6,5.47-5.03,9.86-10.46,10.74-4.39.71-7.04,3.24-7.82,7.65-.96,5.48-4.47,9.29-9.81,10.53-.81.19-1.66.31-2.5.33-2.16.04-4.32.1-6.48,0-3.76-.18-6.27-3.01-6.36-7-.02-1,0-2,0-3-.04,0-.09,0-.13-.01ZM21.83,37.13c.96,0,1.7-.75,1.67-1.69-.02-.89-.78-1.6-1.7-1.6-.92,0-1.67.73-1.68,1.62,0,.94.74,1.67,1.7,1.67ZM27.31,31.7c.96-.01,1.62-.72,1.59-1.73-.02-.95-.72-1.63-1.65-1.61-.92.02-1.61.74-1.6,1.68,0,.99.69,1.68,1.67,1.67ZM27.24,37.15c.98.01,1.65-.66,1.66-1.67,0-.96-.66-1.66-1.59-1.68-.93-.02-1.64.68-1.67,1.61-.03.99.65,1.72,1.6,1.73ZM40.91,14.74c-.9,0-1.67.74-1.68,1.62,0,.92.71,1.64,1.63,1.66.96.02,1.66-.63,1.68-1.58.02-1-.64-1.69-1.63-1.7ZM46.34,14.74c-.9.01-1.66.78-1.64,1.66.02.92.75,1.63,1.67,1.63.99,0,1.67-.69,1.64-1.69-.03-.96-.7-1.61-1.67-1.59ZM48.01,10.91c-.01-.97-.69-1.64-1.64-1.62-.95.01-1.62.7-1.61,1.66,0,.95.7,1.63,1.65,1.62.96-.01,1.62-.69,1.6-1.66ZM10.17,42.74c-1.2-1.56-1.92-3.31-1.97-5.27-.06-2.5-.14-5.01.04-7.49.44-5.82,3.4-10.09,8.58-12.69,1.76-.88,3.76-1.3,5.67-1.86,1.92-.56,3.24-1.66,3.76-3.64.34-1.27.71-2.53,1.05-3.8.05-.18.05-.42-.03-.59-.69-1.51-1.32-3.05-2.11-4.5-1.37-2.51-3.92-3.47-6.62-2.48-1.76.65-3.51,1.39-5.18,2.24-2.92,1.48-4.77,3.86-5.47,7.08-.42,1.91-.11,3.78.25,5.67.36,1.87.27,3.78-.99,5.32-.85,1.04-1.88,1.98-2.96,2.78C.79,26.03-.84,30.38.43,34.43c.66,2.09,1.53,4.14,2.52,6.09,1.48,2.9,4.61,3.89,7.4,2.5-.06-.1-.12-.19-.19-.28Z"/>
-  </g>
-</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.55 43.67">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <g id="Home_page" data-name="Home page">
+                <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                  d="M10.79,33.6c.16-1.81.14-3.65.5-5.41,1.02-4.93,5.2-8.8,10.17-9.61,4.6-.75,7.18-3.3,7.99-7.88C30.56,4.45,35.66.1,42,.02c1.91-.03,3.82-.02,5.73,0,3.83.05,6.71,2.83,6.77,6.66.04,2.56.11,5.15-.17,7.69-.6,5.47-5.03,9.86-10.46,10.74-4.39.71-7.04,3.24-7.82,7.65-.96,5.48-4.47,9.29-9.81,10.53-.81.19-1.66.31-2.5.33-2.16.04-4.32.1-6.48,0-3.76-.18-6.27-3.01-6.36-7-.02-1,0-2,0-3-.04,0-.09,0-.13-.01ZM21.83,37.13c.96,0,1.7-.75,1.67-1.69-.02-.89-.78-1.6-1.7-1.6-.92,0-1.67.73-1.68,1.62,0,.94.74,1.67,1.7,1.67ZM27.31,31.7c.96-.01,1.62-.72,1.59-1.73-.02-.95-.72-1.63-1.65-1.61-.92.02-1.61.74-1.6,1.68,0,.99.69,1.68,1.67,1.67ZM27.24,37.15c.98.01,1.65-.66,1.66-1.67,0-.96-.66-1.66-1.59-1.68-.93-.02-1.64.68-1.67,1.61-.03.99.65,1.72,1.6,1.73ZM40.91,14.74c-.9,0-1.67.74-1.68,1.62,0,.92.71,1.64,1.63,1.66.96.02,1.66-.63,1.68-1.58.02-1-.64-1.69-1.63-1.7ZM46.34,14.74c-.9.01-1.66.78-1.64,1.66.02.92.75,1.63,1.67,1.63.99,0,1.67-.69,1.64-1.69-.03-.96-.7-1.61-1.67-1.59ZM48.01,10.91c-.01-.97-.69-1.64-1.64-1.62-.95.01-1.62.7-1.61,1.66,0,.95.7,1.63,1.65,1.62.96-.01,1.62-.69,1.6-1.66ZM10.17,42.74c-1.2-1.56-1.92-3.31-1.97-5.27-.06-2.5-.14-5.01.04-7.49.44-5.82,3.4-10.09,8.58-12.69,1.76-.88,3.76-1.3,5.67-1.86,1.92-.56,3.24-1.66,3.76-3.64.34-1.27.71-2.53,1.05-3.8.05-.18.05-.42-.03-.59-.69-1.51-1.32-3.05-2.11-4.5-1.37-2.51-3.92-3.47-6.62-2.48-1.76.65-3.51,1.39-5.18,2.24-2.92,1.48-4.77,3.86-5.47,7.08-.42,1.91-.11,3.78.25,5.67.36,1.87.27,3.78-.99,5.32-.85,1.04-1.88,1.98-2.96,2.78C.79,26.03-.84,30.38.43,34.43c.66,2.09,1.53,4.14,2.52,6.09,1.48,2.9,4.61,3.89,7.4,2.5-.06-.1-.12-.19-.19-.28Z" />
+              </g>
+            </svg>
           </div>
           <div class="text-white group-hover:text-[#003897] transition-all duration-300 ease-in-out">
             <p class="text-2xl font-medium">Nuts, raw or roasted
@@ -541,26 +586,28 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.63 54.55">
-  <defs>
-    <style>
-      .cls-1 {
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.63 54.55">
+              <defs>
+                <style>
+                  .cls-1 {
 
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Home_page" data-name="Home page">
-    <g id="mD0nq3">
-      <g>
-        <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out" d="M34.42,0c2.93.02,5.72.5,8.44,1.48,1.82.66,2.61,2.06,2.06,4.03-.41,1.46-.97,2.9-1.67,4.24-1.26,2.41-2.53,4.83-4.06,7.08-1.8,2.65-4.41,4.49-7.15,6.08-2.41,1.4-4.91,2.65-7.38,3.95-4.64,2.44-9.02,5.28-12.12,9.59-1.94,2.7-3.45,5.72-5.14,8.59-.3.5-.51,1.06-.85,1.53-.93,1.27-2.36,1.25-3.21-.05-1.27-1.94-2.19-4.06-2.71-6.32-1.5-6.54-.19-12.7,2.69-18.6,2.66-5.46,6.44-10.05,11.2-13.81,3.88-3.07,8.19-5.41,13.01-6.62,2.25-.57,4.6-.78,6.9-1.15Z"/>
-        <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out" d="M54.63,19.72c-.14,6.77-2.41,12.81-6.26,18.32-3.36,4.81-7.57,8.73-12.54,11.8-3.74,2.31-7.85,3.68-12.2,4.35-3.75.58-7.44.51-11.08-.67-2.5-.81-3.55-2.61-2.39-4.97,1.66-3.36,3.47-6.69,5.53-9.82,2.29-3.47,5.78-5.64,9.4-7.56,2.41-1.28,4.86-2.47,7.25-3.77,6.16-3.37,10.97-8.04,13.8-14.58.57-1.31,1.23-2.58,1.83-3.87.4-.87,1.04-1.42,2.02-1.44.95-.02,1.43.64,1.84,1.37,1.9,3.35,2.83,6.95,2.81,10.81Z"/>
-      </g>
-    </g>
-  </g>
-</svg>
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <g id="Home_page" data-name="Home page">
+                <g id="mD0nq3">
+                  <g>
+                    <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                      d="M34.42,0c2.93.02,5.72.5,8.44,1.48,1.82.66,2.61,2.06,2.06,4.03-.41,1.46-.97,2.9-1.67,4.24-1.26,2.41-2.53,4.83-4.06,7.08-1.8,2.65-4.41,4.49-7.15,6.08-2.41,1.4-4.91,2.65-7.38,3.95-4.64,2.44-9.02,5.28-12.12,9.59-1.94,2.7-3.45,5.72-5.14,8.59-.3.5-.51,1.06-.85,1.53-.93,1.27-2.36,1.25-3.21-.05-1.27-1.94-2.19-4.06-2.71-6.32-1.5-6.54-.19-12.7,2.69-18.6,2.66-5.46,6.44-10.05,11.2-13.81,3.88-3.07,8.19-5.41,13.01-6.62,2.25-.57,4.6-.78,6.9-1.15Z" />
+                    <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                      d="M54.63,19.72c-.14,6.77-2.41,12.81-6.26,18.32-3.36,4.81-7.57,8.73-12.54,11.8-3.74,2.31-7.85,3.68-12.2,4.35-3.75.58-7.44.51-11.08-.67-2.5-.81-3.55-2.61-2.39-4.97,1.66-3.36,3.47-6.69,5.53-9.82,2.29-3.47,5.78-5.64,9.4-7.56,2.41-1.28,4.86-2.47,7.25-3.77,6.16-3.37,10.97-8.04,13.8-14.58.57-1.31,1.23-2.58,1.83-3.87.4-.87,1.04-1.42,2.02-1.44.95-.02,1.43.64,1.84,1.37,1.9,3.35,2.83,6.95,2.81,10.81Z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
           </div>
           <div class="text-white group-hover:text-[#003897] transition-all duration-300 ease-in-out">
             <p class="text-2xl font-medium">Beans and legumes
@@ -598,21 +645,22 @@
         </a>
 
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.63 48.65">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Home_page" data-name="Home page">
-    <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out" d="M53.89,28.27c1.01-1.77.99-2.53-.11-4.23-.25-.39-.3-1.12-.12-1.56.54-1.33.72-2.6-.52-3.55-.88-.68-.93-1.41-.67-2.31.41-1.42-.06-2.52-1.31-3.19-.83-.45-1.04-.99-.94-1.9.16-1.45-.47-2.57-1.9-3.05-.85-.29-1.15-.84-1.19-1.66-.08-1.51-.96-2.45-2.34-2.77-.96-.23-1.42-.64-1.61-1.59-.31-1.6-1.5-2.38-3-2.44-1.08-.04-2.27.08-3.26.49-5.21,2.16-8.34,6.06-9.44,11.61-.34,1.73-.82,3.43-1.36,5.11-.41,1.27-1.43,1.61-2.57,1.02-1.27-.66-2.45-1.5-3.67-2.26-1.61-1.01-3.14-2.22-4.86-2.97-3.61-1.57-7.36-1.51-11.05-.2C.94,13.88,0,15.9.91,18.86c.15.48.02,1.18-.25,1.62-.86,1.44-.94,2.75.11,4.15.27.36.31,1.14.12,1.58-.66,1.52-.49,2.83.74,3.93.6.54.7,1.07.49,1.84-.38,1.38-.12,2.63,1.26,3.35.84.44,1.01,1.03.93,1.92-.12,1.37.39,2.51,1.77,3,.93.33,1.26.88,1.34,1.85.13,1.55.99,2.53,2.6,2.86.41.09.96.56,1.06.95.44,1.73,1.51,2.75,3.24,2.73,1.45-.02,3.06-.06,4.32-.66,4.75-2.28,7.65-6.08,8.59-11.34.27-1.51.59-3.02,1.09-4.46.72-2.06,1.58-2.4,3.51-1.33,1.41.79,2.72,1.79,4,2.79,2.78,2.17,5.89,3.34,9.71,3.32.33-.02.94,0,1.54-.08,2.44-.31,4.79-.84,6.37-3,.93-1.28,1.25-2.54.39-4.02-.23-.4-.18-1.17.06-1.6ZM39.83,24.76c-.23.38-.69.63-1.2.81-1.09.38-2.18.6-3.28.62-.86.01-1.73-.11-2.61-.37-1.63-.49-2.96-.64-4.11-.42-.04,0-.07.01-.11.02-.13.03-.26.06-.39.1-1.48.45-2.67,1.59-3.87,3.52-.24.39-.5.74-.78,1.07-.25.29-.51.55-.79.79-.44.38-.91.72-1.42,1.01-.23.13-.47.26-.72.37-.03.02-.07.03-.1.04-.19.08-.37.16-.56.24-.92.35-1.97.43-2.39-.67,0-.02-.01-.04-.02-.06-.03-.09-.06-.18-.07-.27,0-.02,0-.03,0-.05-.05-.35.06-.64.25-.88.25-.31.67-.54,1.12-.71.11-.04.22-.09.33-.14.22-.1.42-.2.62-.32.49-.29.92-.64,1.3-1.04,0,0,.02-.02.03-.03.1-.11.2-.22.29-.34.08-.1.16-.2.23-.31.36-.5.66-1.06.92-1.68-.18-.1-.36-.18-.53-.26-.74-.32-1.48-.5-2.23-.55-.12,0-.23-.01-.35-.01-.82,0-1.65.14-2.5.42-1.36.45-2.34-.35-1.92-1.53.09-.24.27-.48.5-.69t0,0s.02-.02.03-.02c.22-.2.47-.36.71-.45,1.45-.57,2.95-.81,4.45-.61.48.06.95.17,1.43.33,1.44.47,2.81.62,4.06.39,1.86-.34,3.43-1.51,4.52-3.67.84-1.67,2.38-2.65,4.07-3.38.06-.03.12-.05.19-.08.84-.35,1.66-.37,2.14.38.05.07.09.15.13.24.14.3.17.57.12.81-.02.1-.05.19-.09.27-.19.39-.6.67-1.07.89-.45.21-.88.44-1.28.7-.3.19-.58.4-.85.64-.27.23-.51.48-.74.75-.08.09-.15.18-.22.28-.1.13-.19.27-.28.42-.1.17-.2.34-.3.52-.11.23-.22.46-.31.71,1.88.74,3.69.96,5.53.3.36-.13.7-.21,1.01-.2,0,0,0,0,.01,0,.44.01.81.21,1.06.7.04.08.07.15.1.24.17.48.12.86-.06,1.15Z"/>
-  </g>
-</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.63 48.65">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <g id="Home_page" data-name="Home page">
+                <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                  d="M53.89,28.27c1.01-1.77.99-2.53-.11-4.23-.25-.39-.3-1.12-.12-1.56.54-1.33.72-2.6-.52-3.55-.88-.68-.93-1.41-.67-2.31.41-1.42-.06-2.52-1.31-3.19-.83-.45-1.04-.99-.94-1.9.16-1.45-.47-2.57-1.9-3.05-.85-.29-1.15-.84-1.19-1.66-.08-1.51-.96-2.45-2.34-2.77-.96-.23-1.42-.64-1.61-1.59-.31-1.6-1.5-2.38-3-2.44-1.08-.04-2.27.08-3.26.49-5.21,2.16-8.34,6.06-9.44,11.61-.34,1.73-.82,3.43-1.36,5.11-.41,1.27-1.43,1.61-2.57,1.02-1.27-.66-2.45-1.5-3.67-2.26-1.61-1.01-3.14-2.22-4.86-2.97-3.61-1.57-7.36-1.51-11.05-.2C.94,13.88,0,15.9.91,18.86c.15.48.02,1.18-.25,1.62-.86,1.44-.94,2.75.11,4.15.27.36.31,1.14.12,1.58-.66,1.52-.49,2.83.74,3.93.6.54.7,1.07.49,1.84-.38,1.38-.12,2.63,1.26,3.35.84.44,1.01,1.03.93,1.92-.12,1.37.39,2.51,1.77,3,.93.33,1.26.88,1.34,1.85.13,1.55.99,2.53,2.6,2.86.41.09.96.56,1.06.95.44,1.73,1.51,2.75,3.24,2.73,1.45-.02,3.06-.06,4.32-.66,4.75-2.28,7.65-6.08,8.59-11.34.27-1.51.59-3.02,1.09-4.46.72-2.06,1.58-2.4,3.51-1.33,1.41.79,2.72,1.79,4,2.79,2.78,2.17,5.89,3.34,9.71,3.32.33-.02.94,0,1.54-.08,2.44-.31,4.79-.84,6.37-3,.93-1.28,1.25-2.54.39-4.02-.23-.4-.18-1.17.06-1.6ZM39.83,24.76c-.23.38-.69.63-1.2.81-1.09.38-2.18.6-3.28.62-.86.01-1.73-.11-2.61-.37-1.63-.49-2.96-.64-4.11-.42-.04,0-.07.01-.11.02-.13.03-.26.06-.39.1-1.48.45-2.67,1.59-3.87,3.52-.24.39-.5.74-.78,1.07-.25.29-.51.55-.79.79-.44.38-.91.72-1.42,1.01-.23.13-.47.26-.72.37-.03.02-.07.03-.1.04-.19.08-.37.16-.56.24-.92.35-1.97.43-2.39-.67,0-.02-.01-.04-.02-.06-.03-.09-.06-.18-.07-.27,0-.02,0-.03,0-.05-.05-.35.06-.64.25-.88.25-.31.67-.54,1.12-.71.11-.04.22-.09.33-.14.22-.1.42-.2.62-.32.49-.29.92-.64,1.3-1.04,0,0,.02-.02.03-.03.1-.11.2-.22.29-.34.08-.1.16-.2.23-.31.36-.5.66-1.06.92-1.68-.18-.1-.36-.18-.53-.26-.74-.32-1.48-.5-2.23-.55-.12,0-.23-.01-.35-.01-.82,0-1.65.14-2.5.42-1.36.45-2.34-.35-1.92-1.53.09-.24.27-.48.5-.69t0,0s.02-.02.03-.02c.22-.2.47-.36.71-.45,1.45-.57,2.95-.81,4.45-.61.48.06.95.17,1.43.33,1.44.47,2.81.62,4.06.39,1.86-.34,3.43-1.51,4.52-3.67.84-1.67,2.38-2.65,4.07-3.38.06-.03.12-.05.19-.08.84-.35,1.66-.37,2.14.38.05.07.09.15.13.24.14.3.17.57.12.81-.02.1-.05.19-.09.27-.19.39-.6.67-1.07.89-.45.21-.88.44-1.28.7-.3.19-.58.4-.85.64-.27.23-.51.48-.74.75-.08.09-.15.18-.22.28-.1.13-.19.27-.28.42-.1.17-.2.34-.3.52-.11.23-.22.46-.31.71,1.88.74,3.69.96,5.53.3.36-.13.7-.21,1.01-.2,0,0,0,0,.01,0,.44.01.81.21,1.06.7.04.08.07.15.1.24.17.48.12.86-.06,1.15Z" />
+              </g>
+            </svg>
           </div>
           <div class="text-white group-hover:text-[#003897] transition-all duration-300 ease-in-out">
             <p class="text-2xl font-medium">Pasta and tortelloni
@@ -649,21 +697,22 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 40.86 54.63">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Home_page" data-name="Home page">
-    <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out" d="M20.44,54.62c-4.59,0-9.17,0-13.76,0-2.57,0-4.58-1.03-5.87-3.29-.64-1.11-.94-2.35-.76-3.62.57-4.2,1.19-8.4,1.79-12.6.5-3.55,1-7.1,1.51-10.65.41-2.9.88-5.8,1.25-8.71.31-2.38.76-4.71,1.8-6.9,1.47-3.09,3.72-5.4,6.73-7.01C15.3.69,17.63.08,20.08,0c2-.06,3.97.27,5.85.99,3.36,1.28,6.01,3.42,7.88,6.5,1.18,1.95,1.9,4.08,2.25,6.31.72,4.67,1.34,9.35,2,14.03.91,6.43,1.82,12.85,2.72,19.28.58,4.17-2.26,7.48-6.49,7.5-4.62.03-9.23,0-13.85,0ZM20.41,47.86c3.87,0,7.75,0,11.62,0q1.98,0,1.75-1.91s0-.06,0-.09c-.6-4.4-1.2-8.79-1.81-13.19-.53-3.8-1.09-7.6-1.61-11.41-.08-.61-.29-.83-.91-.83-6.01.02-12.02.02-18.02,0-.54,0-.73.16-.8.71-.4,3.05-.85,6.09-1.28,9.13-.78,5.58-1.54,11.16-2.36,16.73-.11.74.11.87.78.87,4.21-.02,8.43-.01,12.64-.01ZM15.3,11.97c1.03.01,1.72-.65,1.74-1.69.03-1-.69-1.75-1.67-1.77-1-.02-1.73.69-1.74,1.7,0,1.05.66,1.76,1.66,1.77ZM27.29,10.21c-.01-1.01-.75-1.73-1.74-1.71-1.02.03-1.67.73-1.66,1.77.02,1.04.7,1.71,1.73,1.7,1.01-.02,1.67-.72,1.66-1.76ZM20.45,8.48c1.05,0,1.74-.67,1.73-1.69,0-.9-.78-1.66-1.71-1.67-.96-.01-1.67.68-1.68,1.65-.02,1.09.58,1.71,1.66,1.71Z"/>
-  </g>
-</svg>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 40.86 54.63">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <g id="Home_page" data-name="Home page">
+                <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                  d="M20.44,54.62c-4.59,0-9.17,0-13.76,0-2.57,0-4.58-1.03-5.87-3.29-.64-1.11-.94-2.35-.76-3.62.57-4.2,1.19-8.4,1.79-12.6.5-3.55,1-7.1,1.51-10.65.41-2.9.88-5.8,1.25-8.71.31-2.38.76-4.71,1.8-6.9,1.47-3.09,3.72-5.4,6.73-7.01C15.3.69,17.63.08,20.08,0c2-.06,3.97.27,5.85.99,3.36,1.28,6.01,3.42,7.88,6.5,1.18,1.95,1.9,4.08,2.25,6.31.72,4.67,1.34,9.35,2,14.03.91,6.43,1.82,12.85,2.72,19.28.58,4.17-2.26,7.48-6.49,7.5-4.62.03-9.23,0-13.85,0ZM20.41,47.86c3.87,0,7.75,0,11.62,0q1.98,0,1.75-1.91s0-.06,0-.09c-.6-4.4-1.2-8.79-1.81-13.19-.53-3.8-1.09-7.6-1.61-11.41-.08-.61-.29-.83-.91-.83-6.01.02-12.02.02-18.02,0-.54,0-.73.16-.8.71-.4,3.05-.85,6.09-1.28,9.13-.78,5.58-1.54,11.16-2.36,16.73-.11.74.11.87.78.87,4.21-.02,8.43-.01,12.64-.01ZM15.3,11.97c1.03.01,1.72-.65,1.74-1.69.03-1-.69-1.75-1.67-1.77-1-.02-1.73.69-1.74,1.7,0,1.05.66,1.76,1.66,1.77ZM27.29,10.21c-.01-1.01-.75-1.73-1.74-1.71-1.02.03-1.67.73-1.66,1.77.02,1.04.7,1.71,1.73,1.7,1.01-.02,1.67-.72,1.66-1.76ZM20.45,8.48c1.05,0,1.74-.67,1.73-1.69,0-.9-.78-1.66-1.71-1.67-.96-.01-1.67.68-1.68,1.65-.02,1.09.58,1.71,1.66,1.71Z" />
+              </g>
+            </svg>
           </div>
           <div class="text-white group-hover:text-[#003897] transition-all duration-300 ease-in-out">
             <p class="text-2xl font-medium">Dry ingredients
@@ -700,24 +749,132 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end max-w-[240px] w-full gap-5 px-8 py-8 rounded-[40px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 37.62 54.63">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Home_page" data-name="Home page">
-    <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out" d="M37.59,27.35c0-6.18-.06-12.37.03-18.55.04-2.4-.98-4.02-2.93-5.19-2.75-1.66-5.76-2.58-8.9-3.06C22.29,0,18.77-.15,15.23.15,10.85.53,6.61,1.37,2.81,3.73,1.02,4.84.01,6.37.02,8.58.05,20.92.08,33.27,0,45.61c-.02,2.79,1.2,4.6,3.52,5.82,4.05,2.13,8.47,2.71,12.94,3.1,3.38.29,6.72-.08,10.03-.63,2.89-.48,5.74-1.24,8.26-2.83,1.78-1.12,2.88-2.61,2.86-4.89-.07-6.27-.03-12.54-.03-18.81ZM18.85,3.69c6.55,0,11.85,1.42,11.85,3.18s-5.31,3.18-11.85,3.18-11.85-1.42-11.85-3.18,5.31-3.18,11.85-3.18ZM22.34,30.6c-.01,1.75-1.34,3.64-3.76,3.57-1.73,0-3.29-1.62-3.26-3.4.03-1.95,1.73-3.51,3.8-3.49,1.78.02,3.24,1.48,3.22,3.31ZM30.06,45.89c-1.79.54-3.54,1.33-5.37,1.57-2.64.34-5.33.39-8,.37-2.83-.01-5.6-.54-8.26-1.54-1.58-.6-1.63-.67-1.63-2.33,0-3.76,0-7.52,0-11.28,0-1.02.03-.97,1-.81,1.75.27,2.86.94,3.59,2.81,1.42,3.64,6.56,5.65,10.59,3.94,2.51-1.06,4.14-2.83,4.98-5.39.09-.27.28-.64.51-.71,1.05-.32,2.13-.55,3.29-.84.02.38.05.66.05.93,0,4.02-.01,8.03.01,12.05,0,.62-.14,1.05-.76,1.24Z"/>
-  </g>
-</svg>
+            <svg class="w-8" xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2"
+              viewBox="0 0 37.62 54.63">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <g id="Home_page" data-name="Home page">
+                <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                  d="M37.59,27.35c0-6.18-.06-12.37.03-18.55.04-2.4-.98-4.02-2.93-5.19-2.75-1.66-5.76-2.58-8.9-3.06C22.29,0,18.77-.15,15.23.15,10.85.53,6.61,1.37,2.81,3.73,1.02,4.84.01,6.37.02,8.58.05,20.92.08,33.27,0,45.61c-.02,2.79,1.2,4.6,3.52,5.82,4.05,2.13,8.47,2.71,12.94,3.1,3.38.29,6.72-.08,10.03-.63,2.89-.48,5.74-1.24,8.26-2.83,1.78-1.12,2.88-2.61,2.86-4.89-.07-6.27-.03-12.54-.03-18.81ZM18.85,3.69c6.55,0,11.85,1.42,11.85,3.18s-5.31,3.18-11.85,3.18-11.85-1.42-11.85-3.18,5.31-3.18,11.85-3.18ZM22.34,30.6c-.01,1.75-1.34,3.64-3.76,3.57-1.73,0-3.29-1.62-3.26-3.4.03-1.95,1.73-3.51,3.8-3.49,1.78.02,3.24,1.48,3.22,3.31ZM30.06,45.89c-1.79.54-3.54,1.33-5.37,1.57-2.64.34-5.33.39-8,.37-2.83-.01-5.6-.54-8.26-1.54-1.58-.6-1.63-.67-1.63-2.33,0-3.76,0-7.52,0-11.28,0-1.02.03-.97,1-.81,1.75.27,2.86.94,3.59,2.81,1.42,3.64,6.56,5.65,10.59,3.94,2.51-1.06,4.14-2.83,4.98-5.39.09-.27.28-.64.51-.71,1.05-.32,2.13-.55,3.29-.84.02.38.05.66.05.93,0,4.02-.01,8.03.01,12.05,0,.62-.14,1.05-.76,1.24Z" />
+              </g>
+            </svg>
           </div>
           <div class="text-white group-hover:text-[#003897] transition-all duration-300 ease-in-out">
             <p class="text-2xl font-medium">Ready to use
+
+            </p>
+            <p class="text-sm font-light flex items-center gap-2">
+              Shop now
+              <span>
+                <svg class="w-4" xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2"
+                  viewBox="0 0 25.93 11.45">
+                  <style>
+                    .cls-1 {
+                      stroke-miterlimit: 10;
+                      stroke-width: 2px;
+                    }
+
+                    .cls-2 {
+                      stroke-width: 0px;
+                    }
+                  </style>
+                  <g id="Home_page" data-name="Home page">
+                    <g>
+                      <line
+                        class="cls-1 fill-none group-hover:stroke-[#003897] stroke-white transition-all duration-300 ease-in-out"
+                        y1="5.72" x2="24.41" y2="5.72" />
+                      <polygon
+                        class="cls-2 fill-white group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                        points="19.77 11.45 18.81 10.42 23.87 5.73 18.81 1.03 19.77 0 25.93 5.73 19.77 11.45" />
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </p>
+          </div>
+        </a>
+        <a href="#"
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          <div class="max-w-12 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.57 47.75">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <g id="C_Cini" data-name="C Cini">
+                <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                  d="M0,6.82C0,3.06,3.06,0,6.82,0h40.92c3.76,0,6.82,3.06,6.82,6.82v34.1c0,3.76-3.06,6.82-6.82,6.82H6.82c-3.76,0-6.82-3.06-6.82-6.82V6.82ZM11.94,17.05c2.82,0,5.12-2.29,5.12-5.12s-2.29-5.11-5.12-5.11-5.12,2.29-5.12,5.11,2.29,5.12,5.12,5.12ZM34.51,18.17c-.48-.7-1.27-1.12-2.11-1.12s-1.64.42-2.11,1.12l-9.27,13.6-2.82-3.53c-.49-.61-1.23-.96-1.99-.96s-1.51.35-1.99.96l-6.82,8.53c-.62.77-.74,1.82-.31,2.71s1.32,1.45,2.3,1.45h35.81c.95,0,1.82-.52,2.26-1.36.44-.84.38-1.85-.15-2.63l-12.79-18.76Z" />
+              </g>
+            </svg>
+
+          </div>
+          <div class="text-white group-hover:text-[#003897] transition-all duration-300 ease-in-out">
+            <p class="text-xl font-medium">Double line title here
+
+            </p>
+            <p class="text-sm font-light flex items-center gap-2">
+              Shop now
+              <span>
+                <svg class="w-4" xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2"
+                  viewBox="0 0 25.93 11.45">
+                  <style>
+                    .cls-1 {
+                      stroke-miterlimit: 10;
+                      stroke-width: 2px;
+                    }
+
+                    .cls-2 {
+                      stroke-width: 0px;
+                    }
+                  </style>
+                  <g id="Home_page" data-name="Home page">
+                    <g>
+                      <line
+                        class="cls-1 fill-none group-hover:stroke-[#003897] stroke-white transition-all duration-300 ease-in-out"
+                        y1="5.72" x2="24.41" y2="5.72" />
+                      <polygon
+                        class="cls-2 fill-white group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                        points="19.77 11.45 18.81 10.42 23.87 5.73 18.81 1.03 19.77 0 25.93 5.73 19.77 11.45" />
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </p>
+          </div>
+        </a>
+        <a href="#"
+          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          <div class="max-w-12 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.57 47.75">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <g id="C_Cini" data-name="C Cini">
+                <path class="cls-1 fill-white  group-hover:fill-[#003897] transition-all duration-300 ease-in-out"
+                  d="M0,6.82C0,3.06,3.06,0,6.82,0h40.92c3.76,0,6.82,3.06,6.82,6.82v34.1c0,3.76-3.06,6.82-6.82,6.82H6.82c-3.76,0-6.82-3.06-6.82-6.82V6.82ZM11.94,17.05c2.82,0,5.12-2.29,5.12-5.12s-2.29-5.11-5.12-5.11-5.12,2.29-5.12,5.11,2.29,5.12,5.12,5.12ZM34.51,18.17c-.48-.7-1.27-1.12-2.11-1.12s-1.64.42-2.11,1.12l-9.27,13.6-2.82-3.53c-.49-.61-1.23-.96-1.99-.96s-1.51.35-1.99.96l-6.82,8.53c-.62.77-.74,1.82-.31,2.71s1.32,1.45,2.3,1.45h35.81c.95,0,1.82-.52,2.26-1.36.44-.84.38-1.85-.15-2.63l-12.79-18.76Z" />
+              </g>
+            </svg>
+
+          </div>
+          <div class="text-white group-hover:text-[#003897] transition-all duration-300 ease-in-out">
+            <p class="text-2xl font-medium">Title here
 
             </p>
             <p class="text-sm font-light flex items-center gap-2">
@@ -756,25 +913,29 @@
     </div>
   </section>
   <section class="bg-black text-white">
-    <div class="container mx-auto p-8 py-20" style="max-width: 1280px;">
-      <div class="flex flex-col md:flex-row md:space-x-8 justify-between">
-        <div class="w-full md:w-[40%] mb-8 md:mb-0">
+    <div class="max-w-700px lg:max-w-930px xl:max-w-1200px mx-auto p-4 md:p-8 py-4 md:py-20">
+      <div class="flex flex-col lg:flex-row  justify-between">
+        <div class="w-full lg:w-[40%] mb-8 md:mb-0 h-400px lg:h-auto">
           <iframe class="w-full h-full rounded-3xl"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.986071793027!2d14.48358041588731!3d35.879240980151215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5a2eb4b1f05b%3A0x6bdb3deef7fa0b3!2sCini%20Group%20-%20Nature%20Line%20Ltd%20%7C%20Lamb%20Brand!5e0!3m2!1sen!2smt!4v1626455366943!5m2!1sen!2smt"
             allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="w-full md:w-1/2">
-          <div class="md:w-[90%]">
+        <div class="w-full lg:w-1/2 ml-0">
+          <div class="lg:w-[90%]">
 
             <h2 class="text-[60px] font-bold mb-4">Contact us</h2>
             <p class="mb-4">Fill in the form, and our team will get back to you within 24 hours.</p>
             <form action="#" method="POST" class="">
               <div class="flex space-x-4 mb-4">
-                <input type="text" name="name" placeholder="Name" class="w-1/2 p-2 bg-white rounded-md">
-                <input type="text" name="surname" placeholder="Surname" class="w-1/2 p-2 bg-white rounded-md">
+                <input type="text" name="name" placeholder="Name"
+                  class="w-1/2 p-2 text-black outline-none bg-white rounded-md">
+                <input type="text" name="surname" placeholder="Surname"
+                  class="w-1/2 p-2 bg-white rounded-md text-black outline-none">
               </div>
-              <input type="email" name="email" placeholder="Email Address" class="w-full p-2 bg-white rounded-md mb-4">
-              <textarea name="message" placeholder="Message" class="w-full p-2 bg-white rounded-md h-32"></textarea>
+              <input type="email" name="email" placeholder="Email Address"
+                class="w-full p-2 bg-white rounded-md mb-4 text-black outline-none">
+              <textarea name="message" placeholder="Message"
+                class="w-full p-2 bg-white text-black outline-none rounded-md h-32"></textarea>
               <p class="mt-7 mb-7 text-sm">
                 By submitting this form, you consent to the processing of your personal data as outlined in our
                 Privacy Policy. We are committed to protecting your privacy and ensuring the security of your
@@ -784,7 +945,7 @@
                 data processing practices and your rights under GDPR, please refer to our Privacy Policy.
               </p>
               <button type="submit"
-                class=" text-base mt-7 bg-white py-2 px-6 rounded text-black rounded-full flex whitespace-nowrap items-center align-center gap-4">
+                class=" text-base mt-7 bg-white max-w-full md:max-w-120px w-full h-10 justify-center  text-black rounded-full flex whitespace-nowrap items-center align-center gap-4">
                 Submit →</button>
 
             </form>
@@ -794,44 +955,51 @@
     </div>
   </section>
 
-  <footer class=" text-white p-4 mt-0 pt-7" style="background-color: #283A97;">
-    <div class="container mx-auto flex" style="max-width: 1280px;">
+  <footer class=" text-white p-4  pt-7 flex justify-center items-center" style="background-color: #283A97;">
+    <div class="max-w-700px lg:max-w-930px xl:max-w-1200px w-full mx-auto flex flex-col  md:flex-row">
       <div class="text-sm " style="width: 25%;">
         <div class="flex items-center space-x-4">
-          <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
+          <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-8 lg:h-10">
 
         </div>
-        <div class="pt-5 pl-20">
-          <p>info@cini.com</p>
-          <p>+356 2144 4324</p>
-          <p>30, Triq Il-Gdida, Qormi</p>
+        <div class="pt-5 pl-20 hidden md:block">
+          <p class="text-xs lg:text-sm">info@cini.com</p>
+          <p class="text-xs lg:text-sm">+356 2144 4324</p>
+          <p class="text-xs lg:text-sm">30, Triq Il-Gdida, Qormi</p>
         </div>
       </div>
-      <div class="flex-1">
-        <div class="flex justify-between border-b pb-10 mb-8">
-          <div class="flex gap-7">
-            <a href="#" class="hover:text-white text-white">Story</a>
-            <a href="#" class="hover:text-white text-white">Brands</a>
-            <a href="#" class="hover:text-white text-white">News</a>
-            <a href="#" class="hover:text-white text-white">Careers</a>
-            <a href="#" class="hover:text-white text-white">Reach us</a>
+      <div class="flex-1 mt-4 md:mt-0">
+        <div
+          class="flex flex-col md:flex-row justify-between border-none md:border-b pb-0 md:pb-5 lg:pb-10 mb-4 lg:mb-8">
+          <div class="flex  flex-wrap md:flex-none flex-row gap-3 md:gap-7">
+            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Story</a>
+            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Brands</a>
+            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">News</a>
+            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Careers</a>
+            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Reach us</a>
           </div>
-          <div>
+          <div class="hidden md:block">
             <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
             <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
             <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
             <a href="#" class="hover:text-white"><i class="fab fa-tiktok"></i></a>
           </div>
         </div>
-        <div class=" flex justify-between items-center">
-          <div class="flex space-x-4">
-            <a href="#" class="hover:text-white">Privacy policy</a>
-            <a href="#" class="hover:text-white">Terms and conditions</a>
-            <a href="#" class="hover:text-white">Cookie policy</a>
+        <div class=" flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 space-x-0 md:space-x-1 lg:space-x-4">
+            <a href="#" class="hover:text-white text-sm lg:text-base">Privacy policy</a>
+            <a href="#" class="hover:text-white text-sm lg:text-base">Terms and conditions</a>
+            <a href="#" class="hover:text-white text-sm lg:text-base">Cookie policy</a>
           </div>
-          <div class="text-sm">
-            <p>© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
-            <p>Designed & Developed by The Concept Stadium</p>
+          <div class="text-xs lg:text-sm ">
+            <p class="mt-3 md:mt-0">© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
+            <p class="mt-3 md:mt-0">Designed & Developed by The Concept Stadium</p>
+          </div>
+          <div class="md:hidden  mt-3 flex gap-5">
+            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-tiktok"></i></a>
           </div>
         </div>
 
@@ -855,7 +1023,15 @@
         }
       });
     });
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      const hamburgerIcon = document.querySelector('.hamburger-icon');
+      const closeIcon = document.querySelector('.close-icon');
 
+      navLinks.classList.toggle('active');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    }
 
   </script>
 </body>

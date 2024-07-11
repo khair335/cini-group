@@ -57,14 +57,16 @@
     font-display: swap;
 }
 
-
+body{
+    font-family: "Avenir Next", sans-serif;
+}
 .slick-vertical .slick-slide {
     height: auto !important;
 }
 
 .slick-prev {
     left: unset !important;
-    right: -25px;
+    right: 0px;
     top: 30% !important;
 
 }
@@ -94,8 +96,8 @@
 
 /* navigation-section */
 .navigation-section {
-background: rgb(0,0,0);
-/* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3393732492997199) 100%); */
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3393732492997199) 100%); */
 
 
 }
@@ -190,19 +192,204 @@ background: rgb(0,0,0);
     display: block;
 }
 
+.slick-next {
+    right: 0px !important;
+}
+
+
+.curved-section {
+    position: relative;
+    margin-top: -80px;
+    color: white;
+    text-align: center;
+    padding: 5rem 0rem 0;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.curved-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -134px;
+    width: 123%;
+    height: 200px;
+    /* Adjust the height as needed */
+    background: white;
+    border-radius: 50% 50% 0 0;
+    transform: translateY(50%);
+    z-index: 2;
+
+}
+
+/* .curved-section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: white;
+        border-radius: 0;
+        transform: rotate(0deg);
+    } */
+.curve-top {
+    flex: 1;
+    background: url('/assets/Images/front-view-business-people-talking.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 4% 4% 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+
+
+}
+
+.curve-top::after {
+    content: '';
+    position: absolute;
+    top: -113px;
+    left: -153px;
+    width: 123%;
+    height: 440px;
+    background: transparent;
+    border-radius: 0;
+    border-radius: 50%;
+    /* transform: translateY(50%); */
+    border-top: 116px solid;
+    transform: rotate(.55deg);
+}
+
+.contet-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    & * {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.contet-wrapper:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(9 67 177 / 66%);
+}
+
+
 @media (max-width: 1380px) {
     .main-title {
-    font-size: 50px;
+        font-size: 50px;
 
+    }
+
+    .story-section {
+
+        background-position: 162%;
+
+    }
 }
 
-.story-section {
+@media (max-width: 1024px) {
+    .slick-prev {
 
-    background-position: 154%;
+        top: 22% !important;
+    }
 
+    .story-section {
+
+        background-image: none;
+
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 250px;
+        height: 300px;
+        border-radius: 24px;
+        border: 1px solid #003897;
+    }
+
+    .curve-top::after {
+        left: -84px;
+    }
+
+    .curved-section::before {
+        left: -110px;
+    }
 }
+
+@media (max-width: 767px) {
+    .slick-next {
+        top: 27% !important;
+    }
+
+    .slick-next {
+        right: 40px !important;
+    }
+
+    .slick-prev {
+        top: 16% !important;
+    }
+
+    .slick-prev {
+
+        right: 40px !important;
+
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .read-more-btn {
+        max-width: 100%;
+    }
+
+    .curve-top::after {
+        left: -42px;
+        transform: rotate(-0.45deg);
+    }
+    .curved-section::before {
+        left: -43px;
+    }
+    .curved-section{
+        min-height: 480px;
+    }
 }
 
-.arrow-left-svg{
-
+.hamburger-menu {
+    display: none;
 }
+
+@media (max-width: 1024px) {}

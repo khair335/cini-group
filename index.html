@@ -15,6 +15,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "custom-blue": '#283a97',
+                        "custom-blue-2": '#5160a9',
+                        "custom-gray": '#d1dade',
+                        "custom-gray-2": '#f7f7f7',
+                    },
+                    screens: {
+                        'xxl': '1380px', // Custom breakpoint at 1380px
+                    },
+                    maxWidth: {
+                        '2px': '2px',
+                        '120px': '120px',
+                        '160px': '160px',
+                        '180px': '180px',
+                        '190px': '190px',
+                        '400px': '400px',
+                        '528px': '528px',
+                        '650px': '650px',
+                        '660px': '660px',
+                        '700px': '700px',
+                        '930px': '930px',
+                        '1200px': '1200px',
+                        // You can add more custom max-width values here if needed
+                    },
+                    borderRadius: {
+                        'full': '9999px',
+                        '30px': '30px',
+                        // Add more custom border-radius values as needed
+                    },
+                    spacing: {
+                        '20%': '20%',
+                        '40%': '40%',
+                        '60%': '60%',
+                        '70%': '70%',
+                        '73%': '73%',
+                        '75%': '75%',
+                        '90%': '90%',
+                        '1.5': '6px'
+
+                        // Add more custom spacing values as needed
+                    },
+                    fontSize: {
+
+                        '60px': '60px',
+                        '70px': ['4.375rem', '1.2'],
+                        // Add more custom font sizes as needed
+                    },
+                    lineHeight: {
+                        '1': '1',
+                        '1.2': '1.2',
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class=" text-white">
@@ -22,14 +82,14 @@
     <!-- Header Section -->
     <header class="relative bg-black py-8 bg-no-repeat bg-cover bg-center"
         style="background-image: url('./assets/Images/HomeHeroBack@2x.jpg');">
-        <div class="max-w-[930px]  xl:max-w-[1200px] mx-auto">
+        <div class="max-w-700px lg:max-w-930px  xl:max-w-1200px mx-auto">
             <div class="container mx-auto w-full flex justify-between items-center px-6">
                 <div class="flex items-center space-x-4">
-                    <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
+                    <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-6 md:h-10">
 
                 </div>
-                <div class="dropdown max-w-[180px] w-full">
-                    <button class="dropdown-toggle max-w-[180px] w-full h-11 justify-center">
+                <div class="dropdown max-w-180px w-full">
+                    <button class="dropdown-toggle max-w-180px w-full h-11 justify-center">
                         Catalogues
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                             fill="rgba(40,58,151,1)">
@@ -40,19 +100,19 @@
                         <a class="flex items-center justify-between group relative" href="#">
                             <div class=" transition-colors duration-300">Catalogue 1</div>
                             <div
-                                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                                class="group-hover:w-10 w-0 h-2px bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
                             </div>
                         </a>
                         <a class="flex items-center justify-between group relative" href="#">
                             <div class=" transition-colors duration-300">Catalogue 2</div>
                             <div
-                                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                                class="group-hover:w-10 w-0 h-2px bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
                             </div>
                         </a>
                         <a class="flex items-center justify-between group relative" href="#">
                             <div class=" transition-colors duration-300">Catalogue 3</div>
                             <div
-                                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                                class="group-hover:w-10 w-0 h-2px bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
                             </div>
                         </a>
 
@@ -61,38 +121,52 @@
                 </div>
 
             </div>
+
             <div class="pt-16">
-                <div class="slider mx-auto max-w-[930px] xl:max-w-[1200px] ">
+                <div class="slider mx-auto  max-w-660px lg:max-w-930px xl:max-w-1200px ">
                     <div class=" ">
-                        <div class="flex gap-14">
-                            <div class="flex-1" style="max-width: 40%;">
-                                <img src="./assets/Images/HomeHeroSlider1@2x.jpg" alt="Hands" class="w-full"
-                                    style="border-radius: 30px;" />
+                        <div class="flex flex-col md:flex-row gap-5 lg:gap-14 pl-4 pr-20 md:pl-0 md:pr-0">
+                            <div class="flex-1 max-w-full md:max-w-40%">
+                                <img src="./assets/Images/HomeHeroSlider1@2x.jpg" alt="Hands"
+                                    class="w-full rounded-30px" />
                                 <button
-                                    class="mt-6 bg-[#283a97] py-2 px-6  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">Discover
+                                    class="mt-6 bg-custom-blue   max-w-190px w-full h-10 text-white rounded-full md:flex hidden shidden whitespace-nowrap items-center justify-center align-center gap-4">Discover
                                     more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-6" /></button>
                             </div>
                             <div class="flex-1">
-                                <h1 class=" font-bold mt-4 text-6xl xl:text-[70px] leading-[1] xl:leading-[1.2]" >Solutions that
+                                <h1
+                                    class=" font-bold mt-0 md:mt-4 text-2xl md:text-4xl lg:text-6xl xl:text-70px leading- 1 xl:leading-f">
+                                    Solutions that
                                     connect with everything.</h1>
+
+                                <button
+                                    class="mt-6 bg-custom-blue   max-w-full md:max-w-190px w-full h-10 text-white rounded-full flex md:hidden whitespace-nowrap items-center justify-center align-center gap-4">Discover
+                                    more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-6" /></button>
                             </div>
                         </div>
                     </div>
                     <div class=" ">
-                        <div class="flex gap-14">
-                            <div class="flex-1" style="max-width: 40%;">
-                                <img src="./assets/Images/HomeHeroSlider1@2x.jpg" alt="Hands" class="w-full"
-                                    style="border-radius: 30px;" />
-                                 <button
-                                    class="mt-6 bg-[#283a97] py-2 px-6  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">Discover
+                        <div class="flex flex-col md:flex-row gap-5 lg:gap-14 pl-4 pr-20 md:pl-0 md:pr-0">
+                            <div class="flex-1 max-w-full md:max-w-40%">
+                                <img src="./assets/Images/HomeHeroSlider1@2x.jpg" alt="Hands"
+                                    class="w-full rounded-30px" />
+                                <button
+                                    class="mt-6 bg-custom-blue   max-w-190px w-full h-10 text-white rounded-full md:flex hidden shidden whitespace-nowrap items-center justify-center align-center gap-4">Discover
                                     more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-6" /></button>
                             </div>
                             <div class="flex-1">
-                                <h1 class=" font-bold mt-4 text-6xl xl:text-[70px] leading-[1] xl:leading-[1.2]" >Solutions that
+                                <h1
+                                    class=" font-bold mt-0 md:mt-4 text-2xl md:text-4xl lg:text-6xl xl:text-70px leading- 1 xl:leading-f">
+                                    Solutions that
                                     connect with everything.</h1>
+
+                                <button
+                                    class="mt-6 bg-custom-blue   max-w-full md:max-w-190px w-full h-10 text-white rounded-full flex md:hidden whitespace-nowrap items-center justify-center align-center gap-4">Discover
+                                    more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-6" /></button>
                             </div>
                         </div>
                     </div>
+
 
 
                 </div>
@@ -102,112 +176,126 @@
     </header>
 
     <!-- Navigation Section -->
-  <div class="navigation-section pt-24 ">
-      <div class=" py-4 w-full mx-auto ">
-        <div class="container mx-auto max-w-[930px] xl:max-w-[1200px] flex justify-center space-x-8 text-white">
-            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+    <div class="navigation-section pt-2 md:pt-10 lg:pt-24 ">
+        <div class=" py-4 w-full mx-auto ">
+            <div
+                class=" mx-auto max-w-700px lg:max-w-930px xl:max-w-1200px flex flex-col md:flex-row justify-center space-x-0 md:space-x-8 text-white">
+                <a href="#"
+                    class="hover:text-gray-300 border-b md:border-l md:border-b-0  pb-2 md:pb-0 pt-0 md:pt-20 pl-4 flex-1">
 
-                <p class="text-3xl font-bold">Story</p>
-                <p class="text-xl font-semibold">01 <span class="text-base text-blue-800">/05</span></p>
-            </a>
-            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+                    <p class="text-3xl md:text-xl lg:text-3xl font-bold">Story</p>
+                    <p class="text-xl font-semibold">01 <span class="text-base text-blue-800">/05</span></p>
+                </a>
+                <a href="#"
+                    class="hover:text-gray-300 border-b md:border-l md:border-b-0  pb-2 md:pb-0 pt-8 md:pt-20 pl-4 flex-1">
 
 
-                <p class="text-3xl font-bold">Brands</p>
-                <p class="text-xl font-semibold">02 <span class="text-base text-blue-800">/05</span></p>
-            </a>
-            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+                    <p class="text-3xl md:text-xl lg:text-3xl font-bold">Brands</p>
+                    <p class="text-xl font-semibold">02 <span class="text-base text-blue-800">/05</span></p>
+                </a>
+                <a href="#"
+                    class="hover:text-gray-300 border-b md:border-l md:border-b-0  pb-2 md:pb-0 pt-8 md:pt-20 pl-4 flex-1">
 
-                <p class="text-3xl font-bold">News</p>
-                <p class="text-xl font-semibold">03 <span class="text-base text-blue-800">/05</span></p>
-            </a>
-            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+                    <p class="text-3xl md:text-xl lg:text-3xl font-bold">News</p>
+                    <p class="text-xl font-semibold">03 <span class="text-base text-blue-800">/05</span></p>
+                </a>
+                <a href="#"
+                    class="hover:text-gray-300 border-b md:border-l md:border-b-0 pb-2 md:pb-0  pt-8 md:pt-20 pl-4 flex-1">
 
-                <p class="text-3xl font-bold">Careers</p>
-                <p class="text-xl font-semibold">04<span class="text-base text-blue-800">/05</span></p>
-            </a>
-            <a href="#" class="hover:text-gray-300 border-l  pt-20 pl-4 flex-1">
+                    <p class="text-3xl md:text-xl lg:text-3xl font-bold">Careers</p>
+                    <p class="text-xl font-semibold">04<span class="text-base text-blue-800">/05</span></p>
+                </a>
+                <a href="#"
+                    class="hover:text-gray-300 border-b md:border-l md:border-b-0 pb-2 md:pb-0 pt-8 md:pt-20 pl-4 flex-1">
 
-                <p class="text-3xl font-bold">Reach us</p>
-                <p class="text-xl font-semibold">05<span class="text-base text-blue-800">/05</span></p>
-            </a>
+                    <p class="text-3xl md:text-xl lg:text-3xl font-bold">Reach us</p>
+                    <p class="text-xl font-semibold">05<span class="text-base text-blue-800">/05</span></p>
+                </a>
 
-             <div class="flex gap-4 flex-col">
-                        <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="hover:text-white"><i class="fab fa-tiktok"></i></a>
-                    </div>
+                <div class="flex gap-4 flex-row md:flex-col justify-around md:justify-start py-4 md:py-0">
+                    <a href="#" class="hover:text-white"><i
+                            class="text-2xl md:text-base fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white"><i class="text-2xl md:text-base fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white"><i
+                            class="text-2xl md:text-base fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-white"><i class="text-2xl md:text-base fab fa-tiktok"></i></a>
+                </div>
 
+            </div>
         </div>
     </div>
-  </div>
 
     <!-- Story Section -->
-    <div class="bg-[#283a97]">
-    <section class=" story-section relative">
-        <div class="max-w-[930px] xl:max-w-[1200px] mx-auto  flex justify-center relative">
-            <div class="text-left flex-1 ">
-                <div class="py-20">
-                    <h2 class="main-title  pb-10">Cini Group’s story.</h2>
-                    <p class="mt-4 text-base mx-auto text-gray-300">Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                        eos qui ratione voluptatem sequi nesciunt. Modi tempora incidunt ut labore et dolore magnam
-                        aliquam quaerat voluptatem.</p>
-                    <p class="mt-4 text-base mx-auto text-gray-300">Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Neque porro quisquam
-                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-                        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.s
-                    </p>
-                    <button
-                        class="mt-12 bg-white read-more-btn text-[#283a97] border-2 border-white font-semibold justify-center rounded-full flex whitespace-nowrap items-center align-center gap-4">Read
-                        more
-                        <img src="./assets/ButtonArrowBlue.svg" alt="Hands" class="w-4" /></button>
+    <div class="bg-custom-blue">
+        <section class=" story-section relative px-5">
+            <div class="max-w-700px lg:max-w-930px xl:max-w-1200px mx-auto  flex justify-center relative">
+                <div class="text-left flex-1 ">
+                    <div class="py-8 xl:py-20">
+                        <h2 class="main-title  pb-5 xl:pb-10">Cini Group’s story.</h2>
+                        <p class="mt-4 text-base mx-auto text-gray-300">Sed ut perspiciatis unde omnis iste natus error
+                            sit
+                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            dolores
+                            eos qui ratione voluptatem sequi nesciunt. Modi tempora incidunt ut labore et dolore magnam
+                            aliquam quaerat voluptatem.</p>
+                        <p class="mt-4 text-base mx-auto text-gray-300">Sed ut perspiciatis unde omnis iste natus error
+                            sit
+                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Neque porro
+                            quisquam
+                            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                            numquam
+                            eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.s
+                        </p>
+                        <button
+                            class="mt-12 bg-white read-more-btn text-custom-blue border-2 border-white font-semibold justify-center rounded-full flex whitespace-nowrap items-center align-center gap-4">Read
+                            more
+                            <img src="./assets/ButtonArrowBlue.svg" alt="Hands" class="w-4" /></button>
+                    </div>
+                </div>
+
+                <div class="flex-1 hidden lg:block relative">
+
                 </div>
             </div>
-
-            <div class="flex-1 relative">
-                <!-- <img class="h-full absolute right-0" src="./assets/Images/HomeBanner2@2x.png" alt="" srcset=""> -->
-            </div>
-        </div>
-    </section>
+        </section>
     </div>
 
 
     <!-- Latest News Section -->
-    <section class="bg-white text-black py-16">
-        <div class="container mx-auto px-6 max-w-[930px] xl:max-w-[1200px]">
-            <h2 class="main-title text-center text-[#283a97] pb-10 flex justify-between">Latest news.
+    <section class="bg-white text-black py-8 md:py-16">
+        <div class="container mx-auto px-5 md:px-6 max-w-700px lg:max-w-930px xl:max-w-1200px">
+            <h2 class="main-title text-center text-custom-blue pb-5 md:pb-10 flex justify-between">Latest news.
                 <button
-                    class="text-xl mt-6 bg-[#283a97] font-normal  read-more-btn h-14 justify-center i text-white rounded-full flex whitespace-nowrap items-center align-center gap-4">
+                    class="text-xl mt-6 bg-custom-blue font-normal  read-more-btn h-14 justify-center i text-white rounded-full hidden md:flex whitespace-nowrap items-center align-center gap-4">
                     All news <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-6" /></button>
             </h2>
-            <p class="max-w-[700px] w-full pb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            <p class="max-w-700px w-full pb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium
                 doloremque
                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                 architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum
                 quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
                 incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 
-            <div class="flex gap-5 mt-10">
+            <div class="flex flex-col md:flex-row gap-5 mt-10">
                 <div class="flex-1 relative group overflow-hidden rounded-3xl">
                     <img src="./assets/Images/front-view-young-woman-looking-away.jpg"
-                        class="h-full rounded-3xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
+                        class="h-full max-h-528px min-h-80 rounded-3xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
                     <div
-                        class="absolute h-full p-10 left-0 top-[418px] group-hover:top-0 right-0 bottom-0 flex flex-col justify-end bg-[#283a97] bg-opacity-0 group-hover:bg-[#5160a9] group-hover:bg-opacity-90 transition-all duration-500 ease-in-out rounded-3xl">
+                        class="absolute h-auto p-3 lg:p-5 xl:p-10 left-0 top-75% lg:top-73% group-hover:top-0 group-hover:bottom-0 right-0  flex flex-col justify-end bg-custom-blue bg-opacity-0 group-hover:bg-custom-blue-2 group-hover:bg-opacity-90 transition-all duration-500 ease-in-out rounded-3xl">
                         <button
-                            class="text-2xl bg-[#283a97] group-hover:hidden max-w-52 justify-center w-full h-16 mb-10 text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-300 ease-in-out">
+                            class="text-xl lg:text-2xl bg-custom-blue group-hover:hidden max-w-40 lg:max-w-52 justify-center w-full min-h-11 lg:min-h-16  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-300 ease-in-out">
                             Read more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-7" />
                         </button>
                         <h3
-                            class="text-3xl text-white font-medium pb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                            class="text-xl lg:text-2xl xl:text-3xl text-white font-medium pb-2 xl:pb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Lorem ipsum dolor sit amet consectetur depicit
                         </h3>
                         <p
-                            class="text-white leading-8 text-base pb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                            class="text-white leading-5 lg:leading-6 xl:leading-8 text-xs lg:text-base pb-3 lg:pb-5 xl:pb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum
@@ -215,26 +303,26 @@
                             incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                         </p>
                         <button
-                            class="text-2xl bg-[#283a97] max-w-52 justify-center w-full h-16 text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                            class="text-xl lg:text-2xl bg-custom-blue  max-w-40 lg:max-w-52 justify-center w-full min-h-11 lg:min-h-16  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-300 ease-in-out">
                             Read more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-7" />
                         </button>
                     </div>
                 </div>
                 <div class="flex-1 relative group overflow-hidden rounded-3xl">
                     <img src="./assets/Images/elevated-view-fresh-vegetables-white-wooden-desk (extended).jpg"
-                        class="h-full rounded-3xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
+                        class="h-full max-h-528px min-h-80 rounded-3xl object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" />
                     <div
-                        class="absolute h-full p-10 left-0 top-[418px] group-hover:top-0 right-0 bottom-0 flex flex-col justify-end bg-[#283a97] bg-opacity-0 group-hover:bg-[#5160a9] group-hover:bg-opacity-90 transition-all duration-500 ease-in-out rounded-3xl">
+                        class="absolute h-auto p-3 lg:p-5 xl:p-10 left-0 top-75% lg:top-73% group-hover:top-0 group-hover:bottom-0 right-0  flex flex-col justify-end bg-custom-blue bg-opacity-0 group-hover:bg-custom-blue-2 group-hover:bg-opacity-90 transition-all duration-500 ease-in-out rounded-3xl">
                         <button
-                            class="text-2xl bg-[#283a97] group-hover:hidden max-w-52 justify-center w-full h-16 mb-10 text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-300 ease-in-out">
+                            class="text-xl lg:text-2xl bg-custom-blue group-hover:hidden max-w-40 lg:max-w-52 justify-center w-full min-h-11 lg:min-h-16  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-300 ease-in-out">
                             Read more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-7" />
                         </button>
                         <h3
-                            class="text-3xl text-white font-medium pb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                            class="text-xl lg:text-2xl xl:text-3xl text-white font-medium pb-2 xl:pb-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Lorem ipsum dolor sit amet consectetur depicit
                         </h3>
                         <p
-                            class="text-white leading-8 text-base pb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                            class="text-white leading-5 lg:leading-6 xl:leading-8 text-xs lg:text-base pb-3 lg:pb-5 xl:pb-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                             architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum
@@ -242,24 +330,32 @@
                             incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
                         </p>
                         <button
-                            class="text-2xl bg-[#283a97] max-w-52 justify-center w-full h-16 text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+                            class="text-xl lg:text-2xl bg-custom-blue  max-w-40 lg:max-w-52 justify-center w-full min-h-11 lg:min-h-16  text-white rounded-full flex whitespace-nowrap items-center align-center gap-4 transition-opacity duration-300 ease-in-out">
                             Read more <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-7" />
                         </button>
                     </div>
                 </div>
 
 
+
+
+
             </div>
+
+            <button
+                class="text-xl mt-6 bg-custom-blue font-normal  read-more-btn h-10 justify-center i text-white rounded-full md:hidden flex whitespace-nowrap items-center align-center gap-4">
+                All news <img src="./assets/ButtonArrow.svg" alt="Hands" class="w-6" /></button>
 
         </div>
     </section>
 
-    <section class="py-16 bg-[#f7f7f7] text-gray-900">
-        <div class="max-w-[930px] xl:max-w-[1200px] mx-auto px-6">
+    <section class="py-5 md:py-16 bg-custom-gray-2 text-gray-900">
+        <div class="max-w-700px lg:max-w-930px xl:max-w-1200px mx-auto px-4 md:px-6">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h1 class="main-title text-[#283a97] pb-5 text-left">Careers.</h1>
-                <p class="mt-4 text-base max-w-[650px] text-left pb-10">Sed ut perspiciatis unde omnis iste natus error
+                <h1 class="main-title text-custom-blue pb-5 text-left">Careers.</h1>
+                <p class="mt-4 text-base max-w-650px text-left pb-4 md:pb-10">Sed ut perspiciatis unde omnis iste
+                    natus error
                     sit voluptatem accusantium
                     doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                     architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum quia dolor
@@ -273,32 +369,32 @@
                     <div class="bg-white p-6 rounded-3xl shadow-sm flex gap-4 items-start">
                         <img src="./assets/gallery.svg" alt="Benefit Image" class="mb-4 w-6 h-6">
                         <div class="-mt-2">
-                            <h3 class="text-xl font-bold text-[#283a97]">Benefit</h3>
-                            <p class="mt-[6px] text-base">Sed ut perspiciatis unde omnis iste natus error sit
+                            <h3 class="text-xl font-bold text-custom-blue">Benefit</h3>
+                            <p class="mt-1.5 text-base">Sed ut perspiciatis unde omnis iste natus error sit
                                 voluptatem.</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-3xl shadow-sm flex gap-4 items-start">
                         <img src="./assets/gallery.svg" alt="Benefit Image" class="mb-4 w-6 h-6">
                         <div class="-mt-2">
-                            <h3 class="text-xl font-bold text-[#283a97]">Benefit</h3>
-                            <p class="mt-[6px] text-base">Sed ut perspiciatis unde omnis iste natus error sit
+                            <h3 class="text-xl font-bold text-custom-blue">Benefit</h3>
+                            <p class="mt-1.5 text-base">Sed ut perspiciatis unde omnis iste natus error sit
                                 voluptatem.</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-3xl shadow-sm flex gap-4 items-start">
                         <img src="./assets/gallery.svg" alt="Benefit Image" class="mb-4 w-6 h-6">
                         <div class="-mt-2">
-                            <h3 class="text-xl font-bold text-[#283a97]">Benefit</h3>
-                            <p class="mt-[6px] text-base">Sed ut perspiciatis unde omnis iste natus error sit
+                            <h3 class="text-xl font-bold text-custom-blue">Benefit</h3>
+                            <p class="mt-1.5 text-base">Sed ut perspiciatis unde omnis iste natus error sit
                                 voluptatem.</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-3xl shadow-sm flex gap-4 items-start">
                         <img src="./assets/gallery.svg" alt="Benefit Image" class="mb-4 w-6 h-6">
                         <div class="-mt-2">
-                            <h3 class="text-xl font-bold text-[#283a97]">Benefit</h3>
-                            <p class="mt-[6px] text-base">Sed ut perspiciatis unde omnis iste natus error sit
+                            <h3 class="text-xl font-bold text-custom-blue">Benefit</h3>
+                            <p class="mt-1.5 text-base">Sed ut perspiciatis unde omnis iste natus error sit
                                 voluptatem.</p>
                         </div>
                     </div>
@@ -309,9 +405,9 @@
             <!-- Vacancies Section -->
             <div class="mb-12 mt-20">
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-bold text-[#283a97]">Vacancies</h2>
+                    <h2 class="text-2xl font-bold text-custom-blue">Vacancies</h2>
                     <button
-                        class="bg-[#283a97] border-[1px] border-[#283a97] text-white max-w-[160px] h-10 rounded-full hover:bg-white hover:text-[#283a97] hover:border-[#283a97] flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
+                        class="bg-custom-blue border  border-custom-blue text-white max-w-160px h-10 rounded-full hover:bg-white hover:text-custom-blue hover:border-custom-blue flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
                         <p class="-mt-1"> All vacancies
                             <span class="text-lg pl-3">&rarr;</span>
                         </p>
@@ -321,9 +417,9 @@
                 <div class="space-y-6">
                     <!-- Vacancy Item -->
                     <div
-                        class="bg-transparent p-6 rounded-3xl border-2 border-gray-300  flex flex-col md:flex-row justify-between ">
-                        <div class="flex-1 max-w-[60%] w-full">
-                            <div class="flex gap-6 items-end mb-5">
+                        class="bg-transparent p-6 rounded-3xl border-2 border-gray-300  gap-8 lg:gap-0 flex flex-col lg:flex-row justify-between ">
+                        <div class="flex-1 max-w-full lg:max-w-70% xl:max-w-60% w-full">
+                            <div class="flex flex-wrap md:flex-none gap-6 items-end mb-5">
                                 <span>
                                     <svg width="30px" height="30px" viewBox="0 0 0.6 0.6" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -334,7 +430,7 @@
                                     </svg>
                                 </span>
                                 <h3 class="text-xl font-bold ">Vacancy title goes here</h3>
-                                <div class="flex flex-wrap gap-5 items-center text-sm text-[#283a97] ">
+                                <div class="flex flex-wrap gap-5 items-center text-sm text-custom-blue ">
                                     <span class="mr-4"><strong>Experience</strong> <br> <span>2 years</span></span>
                                     <span class="mr-4"> <strong>Deadline for submission</strong> <br>
                                         <strong>12/05/2024</strong></span>
@@ -347,27 +443,28 @@
                                 dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
 
                         </div>
-                        <div class="max-w-[20%] w-full flex flex-col items-end justify-between">
-                            <div class="flex flex-wrap items-center gap-3 mb-4 justify-end">
+                        <div
+                            class="max-w-full lg:max-w-20% w-full flex flex-col items-start lg:items-end justify-between">
+                            <div class="flex flex-wrap items-center gap-3 mb-4 justify-start md:justify-end">
                                 <span
-                                    class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Fulltime</span>
-                                <span class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
+                                    class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Fulltime</span>
+                                <span class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
                                     2</span>
                                 <span
-                                    class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
-                                <span class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
+                                    class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
+                                <span class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
                                     3</span>
-                                <span class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
+                                <span class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
                                     4</span>
                                 <span
-                                    class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
+                                    class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
                             </div>
 
                             <button
-                                class="bg-[#283a97] border-[1px] border-[#283a97] text-white max-w-[160px] h-10 rounded-full hover:bg-white hover:text-[#283a97] hover:border-[#283a97] flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
+                                class="bg-custom-blue border  border-custom-blue text-white max-w-full md:max-w-160px h-10 rounded-full hover:bg-white hover:text-custom-blue hover:border-custom-blue flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
                                 <p class="-mt-1"> Apply
                                     now
-                                    <span class="text-lg pl-3">&rarr;</span>
+                                    <span class="text-xl pl-3">&rarr;</span>
                                 </p>
                             </button>
 
@@ -375,9 +472,9 @@
                     </div>
                     <!-- Vacancy Item -->
                     <div
-                        class="bg-transparent p-6 rounded-3xl border-2 border-gray-300  flex flex-col md:flex-row justify-between ">
-                        <div class="flex-1 max-w-[60%] w-full">
-                            <div class="flex gap-6 items-end mb-5">
+                        class="bg-transparent p-6 rounded-3xl border-2 border-gray-300  gap-8 lg:gap-0 flex flex-col lg:flex-row justify-between ">
+                        <div class="flex-1 max-w-full lg:max-w-70% xl:max-w-60% w-full">
+                            <div class="flex flex-wrap md:flex-none gap-6 items-end mb-5">
                                 <span>
                                     <svg width="30px" height="30px" viewBox="0 0 0.6 0.6" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -388,7 +485,7 @@
                                     </svg>
                                 </span>
                                 <h3 class="text-xl font-bold ">Vacancy title goes here</h3>
-                                <div class="flex flex-wrap gap-5 items-center text-sm text-[#283a97] ">
+                                <div class="flex flex-wrap gap-5 items-center text-sm text-custom-blue ">
                                     <span class="mr-4"><strong>Experience</strong> <br> <span>2 years</span></span>
                                     <span class="mr-4"> <strong>Deadline for submission</strong> <br>
                                         <strong>12/05/2024</strong></span>
@@ -401,32 +498,36 @@
                                 dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
 
                         </div>
-                        <div class="max-w-[20%] w-full flex flex-col items-end justify-between">
-                            <div class="flex flex-wrap items-center gap-3 mb-4 justify-end">
+                        <div
+                            class="max-w-full lg:max-w-20% w-full flex flex-col items-start lg:items-end justify-between">
+                            <div class="flex flex-wrap items-center gap-3 mb-4 justify-start md:justify-end">
                                 <span
-                                    class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Fulltime</span>
-                                <span class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
+                                    class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Fulltime</span>
+                                <span class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
                                     2</span>
                                 <span
-                                    class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
-                                <span class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
+                                    class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
+                                <span class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
                                     3</span>
-                                <span class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
+                                <span class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Tag
                                     4</span>
                                 <span
-                                    class="bg-[#d1dade] text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
+                                    class="bg-custom-gray text-gray-800 py-1  rounded-md font-medium px-3 text-xs">Feature</span>
                             </div>
 
                             <button
-                                class="bg-[#283a97] border-[1px] border-[#283a97] text-white max-w-[160px] h-10 rounded-full hover:bg-white hover:text-[#283a97] hover:border-[#283a97] flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
+                                class="bg-custom-blue border border-custom-blue text-white max-w-full md:max-w-160px h-10 rounded-full hover:bg-white hover:text-custom-blue hover:border-custom-blue flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
                                 <p class="-mt-1"> Apply
                                     now
-                                    <span class="text-lg pl-3">&rarr;</span>
+                                    <span class="text-xl pl-3">&rarr;</span>
                                 </p>
                             </button>
 
                         </div>
                     </div>
+
+
+
 
 
                 </div>
@@ -435,127 +536,149 @@
     </section>
     <div class="bg-black">
 
-    <div class="container mx-auto p-8 py-20"  style="max-width: 1280px;">
-        <div class="flex flex-col md:flex-row md:space-x-8 justify-between">
-            <div class="w-full md:w-[40%] mb-8 md:mb-0">
-                <iframe class="w-full h-full rounded-3xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.986071793027!2d14.48358041588731!3d35.879240980151215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5a2eb4b1f05b%3A0x6bdb3deef7fa0b3!2sCini%20Group%20-%20Nature%20Line%20Ltd%20%7C%20Lamb%20Brand!5e0!3m2!1sen!2smt!4v1626455366943!5m2!1sen!2smt" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="w-full md:w-1/2">
-                <div class="md:w-[90%]">
+        <div class="max-w-700px lg:max-w-930px xl:max-w-1200px mx-auto p-4 md:p-8 py-4 md:py-20">
+            <div class="flex flex-col lg:flex-row  justify-between">
+                <div class="w-full lg:w-40% mb-8 md:mb-0 h-400px lg:h-auto">
+                    <iframe class="w-full h-full rounded-3xl"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.986071793027!2d14.48358041588731!3d35.879240980151215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5a2eb4b1f05b%3A0x6bdb3deef7fa0b3!2sCini%20Group%20-%20Nature%20Line%20Ltd%20%7C%20Lamb%20Brand!5e0!3m2!1sen!2smt!4v1626455366943!5m2!1sen!2smt"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="w-full lg:w-1/2 ml-0">
+                    <div class="lg:w-90%">
 
-                    <h2 class="text-[60px] font-bold mb-4">Contact us</h2>
-                    <p class="mb-4">Fill in the form, and our team will get back to you within 24 hours.</p>
-                    <form action="#" method="POST" class="">
-                        <div class="flex space-x-4 mb-4">
-                            <input type="text" name="name" placeholder="Name" class="w-1/2 p-2 bg-white rounded-md">
-                            <input type="text" name="surname" placeholder="Surname"
-                                class="w-1/2 p-2 bg-white rounded-md">
+                        <h2 class="text-60px font-bold mb-4">Contact us</h2>
+                        <p class="mb-4">Fill in the form, and our team will get back to you within 24 hours.</p>
+                        <form action="#" method="POST" class="">
+                            <div class="flex space-x-4 mb-4">
+                                <input type="text" name="name" placeholder="Name"
+                                    class="w-1/2 p-2 text-black outline-none bg-white rounded-md">
+                                <input type="text" name="surname" placeholder="Surname"
+                                    class="w-1/2 p-2 bg-white rounded-md text-black outline-none">
+                            </div>
+                            <input type="email" name="email" placeholder="Email Address"
+                                class="w-full p-2 bg-white rounded-md mb-4 text-black outline-none">
+                            <textarea name="message" placeholder="Message"
+                                class="w-full p-2 bg-white text-black outline-none rounded-md h-32"></textarea>
+                            <p class="mt-7 mb-7 text-sm">
+                                By submitting this form, you consent to the processing of your personal data as outlined
+                                in our
+                                Privacy Policy. We are committed to protecting your privacy and ensuring the security of
+                                your
+                                personal information. Your data will only be used for the purpose for which you provided
+                                it and
+                                will not be shared with any third parties without your explicit consent. You have the
+                                right to
+                                access, rectify, or delete any personal data we hold about you. For more information
+                                about our
+                                data processing practices and your rights under GDPR, please refer to our Privacy
+                                Policy.
+                            </p>
+                            <button type="submit"
+                                class=" text-base mt-7 bg-white max-w-full md:max-w-120px w-full h-10 justify-center  text-black rounded-full flex whitespace-nowrap items-center align-center gap-4">
+                                Submit →</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class=" text-white p-4  pt-7 flex justify-center items-center" style="background-color: #283A97;">
+            <div class="max-w-700px lg:max-w-930px xl:max-w-1200px w-full mx-auto flex flex-col  md:flex-row">
+                <div class="text-sm " style="width: 25%;">
+                    <div class="flex items-center space-x-4">
+                        <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-8 lg:h-10">
+
+                    </div>
+                    <div class="pt-5 pl-20 hidden md:block">
+                        <p class="text-xs lg:text-sm">info@cini.com</p>
+                        <p class="text-xs lg:text-sm">+356 2144 4324</p>
+                        <p class="text-xs lg:text-sm">30, Triq Il-Gdida, Qormi</p>
+                    </div>
+                </div>
+                <div class="flex-1 mt-4 md:mt-0">
+                    <div
+                        class="flex flex-col md:flex-row justify-between border-none md:border-b pb-0 md:pb-5 lg:pb-10 mb-4 lg:mb-8">
+                        <div class="flex  flex-wrap md:flex-none flex-row gap-3 md:gap-7">
+                            <a href="#"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Story</a>
+                            <a href="#"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Brands</a>
+                            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">News</a>
+                            <a href="#"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Careers</a>
+                            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Reach
+                                us</a>
                         </div>
-                        <input type="email" name="email" placeholder="Email Address"
-                            class="w-full p-2 bg-white rounded-md mb-4">
-                        <textarea name="message" placeholder="Message"
-                            class="w-full p-2 bg-white rounded-md h-32"></textarea>
-                        <p class="mt-7 mb-7 text-sm">
-                            By submitting this form, you consent to the processing of your personal data as outlined in our
-                            Privacy Policy. We are committed to protecting your privacy and ensuring the security of your
-                            personal information. Your data will only be used for the purpose for which you provided it and
-                            will not be shared with any third parties without your explicit consent. You have the right to
-                            access, rectify, or delete any personal data we hold about you. For more information about our
-                            data processing practices and your rights under GDPR, please refer to our Privacy Policy.
-                        </p>
-                        <button type="submit"
-                        class=" text-base mt-7 bg-white py-2 px-6  text-black rounded-full flex whitespace-nowrap items-center align-center gap-4">
-                        Submit →</button>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class=" text-white p-4  pt-7" style="background-color: #283A97;">
-        <div class="container mx-auto flex" style="max-width: 1280px;">
-            <div class="text-sm " style="width: 25%;">
-                <div class="flex items-center space-x-4">
-                    <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
-
-                </div>
-                <div class="pt-5 pl-20">
-                    <p>info@cini.com</p>
-                    <p>+356 2144 4324</p>
-                    <p>30, Triq Il-Gdida, Qormi</p>
-                </div>
-            </div>
-            <div class="flex-1">
-                <div class="flex justify-between border-b pb-10 mb-8">
-                  <div class="flex gap-7">
-                    <a href="#" class="hover:text-white text-white">Story</a>
-                    <a href="#" class="hover:text-white text-white">Brands</a>
-                    <a href="#" class="hover:text-white text-white">News</a>
-                    <a href="#" class="hover:text-white text-white">Careers</a>
-                    <a href="#" class="hover:text-white text-white">Reach us</a>
-                  </div>
-                  <div>
-                     <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="hover:text-white"><i class="fab fa-tiktok"></i></a></div>
-                </div>
-                <div class=" flex justify-between items-center">
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-white">Privacy policy</a>
-                        <a href="#" class="hover:text-white">Terms and conditions</a>
-                        <a href="#" class="hover:text-white">Cookie policy</a>
+                        <div class="hidden md:block">
+                            <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-white"><i class="fab fa-tiktok"></i></a>
+                        </div>
                     </div>
-                    <div class="text-sm">
-                        <p>© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
-                        <p>Designed & Developed by The Concept Stadium</p>
+                    <div class=" flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div
+                            class="flex flex-col md:flex-row space-y-3 md:space-y-0 space-x-0 md:space-x-1 lg:space-x-4">
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Privacy policy</a>
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Terms and conditions</a>
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Cookie policy</a>
+                        </div>
+                        <div class="text-xs lg:text-sm ">
+                            <p class="mt-3 md:mt-0">© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
+                            <p class="mt-3 md:mt-0">Designed & Developed by The Concept Stadium</p>
+                        </div>
+                        <div class="md:hidden  mt-3 flex gap-5">
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-facebook"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-tiktok"></i></a>
+                        </div>
                     </div>
+
                 </div>
-
             </div>
-        </div>
 
 
-    </footer>
+        </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Slick Slider JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                vertical: true,
-                verticalSwiping: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: true,
-                infinite: false,
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <!-- Slick Slider JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.slider').slick({
+                    vertical: true,
+                    verticalSwiping: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: true,
+                    infinite: false,
+                });
             });
-        });
-    </script>
+        </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleButton = document.querySelector('.dropdown-toggle');
-            const dropdownMenu = document.querySelector('.dropdown-menu');
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggleButton = document.querySelector('.dropdown-toggle');
+                const dropdownMenu = document.querySelector('.dropdown-menu');
 
-            toggleButton.addEventListener('click', function () {
-                dropdownMenu.classList.toggle('show');
+                toggleButton.addEventListener('click', function () {
+                    dropdownMenu.classList.toggle('show');
+                });
+
+                window.addEventListener('click', function (e) {
+                    if (!toggleButton.contains(e.target)) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                });
             });
 
-            window.addEventListener('click', function (e) {
-                if (!toggleButton.contains(e.target)) {
-                    dropdownMenu.classList.remove('show');
-                }
-            });
-        });
 
-
-    </script>
+        </script>
 </body>
 
 </html>

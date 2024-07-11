@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
- 
+  <link href="./assets/styles/style.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <style>
     .slick-slide img {
@@ -17,24 +17,54 @@
   <!-- Header -->
   <header class="bg-blue-900 text-white p-4">
     <div class="container mx-auto flex justify-between items-center">
-      <div class="text-xl font-bold">CINI GROUP</div>
-      <nav class="space-x-4">
-        <a href="#" class="hover:underline">Story</a>
-        <a href="#" class="hover:underline">Brands</a>
-        <a href="#" class="hover:underline">News</a>
-        <a href="#" class="hover:underline">Careers</a>
-        <a href="#" class="hover:underline">Reach us</a>
-        <div class="relative dropdown inline-block border py-3 px-6 rounded-full">
-          <a href="#" class="hover:underline">Catalogues</a>
-          <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-            <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Catalogue 1</a></li>
-            <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Catalogue 2</a></li>
-            <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Catalogue 3</a></li>
-            <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Catalogue 4</a></li>
-            <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Catalogue 5</a></li>
-          </ul>
+      <a href="">
+        <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
+      </a>
+      <nav class="space-x-4 flex flex-1 justify-end items-center">
+        <a href="#"
+          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Story</a>
+        <a href="#"
+          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Brands</a>
+        <a href="#"
+          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">News</a>
+        <a href="#"
+          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Careers</a>
+        <a href="#"
+          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Reach
+          us</a>
+
+        <div class="dropdown max-w-[180px] w-full">
+          <button class="dropdown-toggle max-w-[180px] w-full h-11 justify-center">
+            Catalogues
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(40,58,151,1)">
+              <path d="M12 14L8 10H16L12 14Z"></path>
+            </svg>
+          </button>
+          <div class="dropdown-menu">
+            <a class="flex items-center justify-between group relative" href="#">
+              <div class=" transition-colors duration-300">Catalogue 1</div>
+              <div
+                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+              </div>
+            </a>
+            <a class="flex items-center justify-between group relative" href="#">
+              <div class=" transition-colors duration-300">Catalogue 2</div>
+              <div
+                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+              </div>
+            </a>
+            <a class="flex items-center justify-between group relative" href="#">
+              <div class=" transition-colors duration-300">Catalogue 3</div>
+              <div
+                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+              </div>
+            </a>
+
+          </div>
+
         </div>
       </nav>
+
     </div>
   </header>
   <div class="container mx-auto py-12">
@@ -43,7 +73,7 @@
       <!-- Product Images Slider -->
       <div>
         <div class="main-slider">
-          <div><img src="https://placehold.co/400x600" alt="Product Image 1" class="w-full h-64 object-cover"></div>
+          <div><img src="/assets/Images/ProductImage1@2x.jpg" alt="Product Image 1" class="w-full h-64 object-contain"></div>
           <div><img src="image2.jpg" alt="Product Image 2" class="w-full h-64 object-cover"></div>
           <div><img src="https://placehold.co/500x600" alt="Product Image 3" class="w-full h-64 object-cover"></div>
           <div><img src="image4.jpg" alt="Product Image 4" class="w-full h-64 object-cover"></div>
@@ -122,7 +152,7 @@
         <div class="text-sm " style="width: 25%;">
             <div class="flex items-center space-x-4">
                 <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
-               
+
             </div>
            <div class="pt-5 pl-20">
              <p>info@cini.com</p>
@@ -138,7 +168,7 @@
                 <a href="#" class="hover:text-white text-white">Careers</a>
                 <a href="#" class="hover:text-white text-white">Reach us</a>
               </div>
-              <div> 
+              <div>
                  <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
@@ -158,7 +188,7 @@
 
         </div>
     </div>
-    
+
 
 </footer>
 
@@ -183,6 +213,24 @@
         focusOnSelect: true
       });
     });
+  </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.dropdown-toggle');
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+
+      toggleButton.addEventListener('click', function () {
+        dropdownMenu.classList.toggle('show');
+      });
+
+      window.addEventListener('click', function (e) {
+        if (!toggleButton.contains(e.target)) {
+          dropdownMenu.classList.remove('show');
+        }
+      });
+    });
+
+
   </script>
 
 </body>
