@@ -35,7 +35,9 @@
             '160px': '160px',
             '180px': '180px',
             '190px': '190px',
+            '280px': '280px',
             '400px': '400px',
+            '528px': '528px',
             '650px': '650px',
             '660px': '660px',
             '700px': '700px',
@@ -46,11 +48,18 @@
           borderRadius: {
             'full': '9999px',
             '30px': '30px',
+            '45px': '45px',
             // Add more custom border-radius values as needed
+          },
+          maxHeight: {
+            '1.5': '1px',
+            '528px': '528px'
+
           },
           spacing: {
             '20%': '20%',
             '40%': '40%',
+            '45%': '45%',
             '60%': '60%',
             '70%': '70%',
             '73%': '73%',
@@ -62,6 +71,8 @@
           },
           fontSize: {
 
+            '40px': '40px',
+            '52px': '52px',
             '60px': '60px',
             '70px': ['4.375rem', '1.2'],
             // Add more custom font sizes as needed
@@ -69,11 +80,13 @@
           lineHeight: {
             '1': '1',
             '1.2': '1.2',
+            '44': '44px',
+            '56': '56px',
           },
         }
       }
     }
-  </script>s
+  </script>
 </head>
 
 <body class="bg-gray-50">
@@ -171,12 +184,12 @@
     <div class="max-w-700px lg:max-w-930px  xl:max-w-1200px w-full mx-auto px-10">
       <div class="flex flex-col lg:flex-row justify-center gap-8 xl:gap-16">
 
-        <div class="rounded-2xl max-w-full lg:max-w-[45%] xl:max-w-[40%] w-full bg-custom-gray-2">
+        <div class="rounded-2xl max-w-full lg:max-w-45% xl:max-w-40% w-full bg-custom-gray-2">
           <img class="rounded-t-2xl w-full h-64 object-cover" src="/assets/Images/gradient-3d-fluid-background.jpg"
             alt="Company profile">
           <div class="p-7 xl:p-10">
             <h2
-              class="text-[40px] xl:text-[52px] leading-[44px] xl:leading-[56px] font-bold font-blue-custom pb-6 xl:pb-8 ">
+              class="text-40px xl:text-52px leading-44px xl:leading-56px font-bold font-blue-custom pb-6 xl:pb-8 ">
               Company <br class="hidden lg:block"> profile.</h2>
             <p class="text-black text-sm  mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium
@@ -199,12 +212,12 @@
               aliquam quaerat voluptatem.</p>
           </div>
         </div>
-        <div class="rounded-2xl max-w-full lg:max-w-[45%] xl:max-w-[40%] w-full bg-custom-gray-2">
+        <div class="rounded-2xl max-w-full lg:max-w-45% xl:max-w-40% w-full bg-custom-gray-2">
           <img class="rounded-t-2xl w-full h-64 object-cover" src="/assets/Images/gradient-3d-fluid-background.jpg"
             alt="Company profile">
           <div class="p-7 xl:p-10">
             <h2
-              class="text-[40px] xl:text-[52px] leading-[44px] xl:leading-[56px] font-bold font-blue-custom pb-6 xl:pb-8 ">
+              class="text-40px xl:text-52px leading-44px xl:leading-56px font-bold font-blue-custom pb-6 xl:pb-8 ">
               Manufacturing planta.</h2>
             <p class="text-black text-sm  mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium
@@ -236,7 +249,7 @@
           src="/assets/Images/dark-light-blue-aquarelle-background.jpg" alt="">
 
         <div class="p-7 xl:p-10 ">
-          <h2 class="text-[40px] xl:text-[52px] leading-[44px] xl:leading-[56px] font-bold font-blue-custom pb-8">
+          <h2 class="text-40px xl:text-52px leading-44px xl:leading-56px font-bold font-blue-custom pb-8">
             Distribution</h2>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -247,7 +260,7 @@
             Neno enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
             dolores eos qui ratione voluptatem sequi nesciunt.</p>
           <button
-            class="bg-custom-blue mt-10 border-[1px] border-custom-blue text-white max-w-160px h-10 rounded-full hover:bg-white hover:text-custom-blue hover:border-custom-blue flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
+            class="bg-custom-blue mt-10 border border-custom-blue text-white max-w-160px h-10 rounded-full hover:bg-white hover:text-custom-blue hover:border-custom-blue flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
             <p class="-mt-1"> Apply
               now
               <span class="text-lg pl-3">&rarr;</span>
@@ -284,7 +297,7 @@
       <h2 class="main-title text-[#fff] text-left mb-6">Products</h2>
       <div class="flex flex-wrap gap-y-3">
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.57 54.66">
               <g id="Home_page" data-name="Home page">
@@ -326,7 +339,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.35 47.48">
               <defs>
@@ -378,7 +391,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.36 47.57">
               <defs>
@@ -430,7 +443,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.55 47.73">
               <defs>
@@ -482,7 +495,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.55 48.03">
               <defs>
@@ -534,7 +547,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.55 43.67">
               <defs>
@@ -586,7 +599,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.63 54.55">
               <defs>
@@ -645,7 +658,7 @@
         </a>
 
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.63 48.65">
               <defs>
@@ -697,7 +710,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 40.86 54.63">
               <defs>
@@ -749,7 +762,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg class="w-8" xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2"
               viewBox="0 0 37.62 54.63">
@@ -802,7 +815,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.57 47.75">
               <defs>
@@ -855,7 +868,7 @@
           </div>
         </a>
         <a href="#"
-          class="flex justify-center items-end  max-w-[280px] w-full gap-5 px-14 py-4 rounded-[45px] group hover:bg-white transition-all duration-300 ease-in-out">
+          class="flex justify-center items-end  max-w-280px w-full gap-5 px-14 py-4 rounded-45px group hover:bg-white transition-all duration-300 ease-in-out">
           <div class="max-w-12 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 54.57 47.75">
               <defs>
@@ -915,7 +928,7 @@
   <section class="bg-black text-white">
     <div class="max-w-700px lg:max-w-930px xl:max-w-1200px mx-auto p-4 md:p-8 py-4 md:py-20">
       <div class="flex flex-col lg:flex-row  justify-between">
-        <div class="w-full lg:w-[40%] mb-8 md:mb-0 h-400px lg:h-auto">
+        <div class="w-full lg:w-40% mb-8 md:mb-0 h-400px lg:h-auto">
           <iframe class="w-full h-full rounded-3xl"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.986071793027!2d14.48358041588731!3d35.879240980151215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5a2eb4b1f05b%3A0x6bdb3deef7fa0b3!2sCini%20Group%20-%20Nature%20Line%20Ltd%20%7C%20Lamb%20Brand!5e0!3m2!1sen!2smt!4v1626455366943!5m2!1sen!2smt"
             allowfullscreen="" loading="lazy"></iframe>
@@ -923,7 +936,7 @@
         <div class="w-full lg:w-1/2 ml-0">
           <div class="lg:w-[90%]">
 
-            <h2 class="text-[60px] font-bold mb-4">Contact us</h2>
+            <h2 class="text-6xl font-bold mb-4">Contact us</h2>
             <p class="mb-4">Fill in the form, and our team will get back to you within 24 hours.</p>
             <form action="#" method="POST" class="">
               <div class="flex space-x-4 mb-4">
@@ -955,59 +968,64 @@
     </div>
   </section>
 
-  <footer class=" text-white p-4  pt-7 flex justify-center items-center" style="background-color: #283A97;">
-    <div class="max-w-700px lg:max-w-930px xl:max-w-1200px w-full mx-auto flex flex-col  md:flex-row">
-      <div class="text-sm " style="width: 25%;">
-        <div class="flex items-center space-x-4">
-          <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-8 lg:h-10">
+  <footer class=" text-white p-4  pt-7 flex justify-center items-center bg-custom-blue" >
+            <div class="max-w-700px lg:max-w-930px xl:max-w-1200px w-full mx-auto flex flex-col  md:flex-row">
+                <div class="text-sm " style="width: 25%;">
+                    <div class="flex items-center space-x-4">
+                        <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-8 lg:h-10">
 
-        </div>
-        <div class="pt-5 pl-20 hidden md:block">
-          <p class="text-xs lg:text-sm">info@cini.com</p>
-          <p class="text-xs lg:text-sm">+356 2144 4324</p>
-          <p class="text-xs lg:text-sm">30, Triq Il-Gdida, Qormi</p>
-        </div>
-      </div>
-      <div class="flex-1 mt-4 md:mt-0">
-        <div
-          class="flex flex-col md:flex-row justify-between border-none md:border-b pb-0 md:pb-5 lg:pb-10 mb-4 lg:mb-8">
-          <div class="flex  flex-wrap md:flex-none flex-row gap-3 md:gap-7">
-            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Story</a>
-            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Brands</a>
-            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">News</a>
-            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Careers</a>
-            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-[40%] md:w-max">Reach us</a>
-          </div>
-          <div class="hidden md:block">
-            <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="hover:text-white"><i class="fab fa-tiktok"></i></a>
-          </div>
-        </div>
-        <div class=" flex flex-col md:flex-row justify-between items-start md:items-center">
-          <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 space-x-0 md:space-x-1 lg:space-x-4">
-            <a href="#" class="hover:text-white text-sm lg:text-base">Privacy policy</a>
-            <a href="#" class="hover:text-white text-sm lg:text-base">Terms and conditions</a>
-            <a href="#" class="hover:text-white text-sm lg:text-base">Cookie policy</a>
-          </div>
-          <div class="text-xs lg:text-sm ">
-            <p class="mt-3 md:mt-0">© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
-            <p class="mt-3 md:mt-0">Designed & Developed by The Concept Stadium</p>
-          </div>
-          <div class="md:hidden  mt-3 flex gap-5">
-            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-facebook"></i></a>
-            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-instagram"></i></a>
-            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-linkedin"></i></a>
-            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-tiktok"></i></a>
-          </div>
-        </div>
+                    </div>
+                    <div class="pt-5 pl-20 hidden md:block">
+                        <p class="text-xs lg:text-sm">info@cini.com</p>
+                        <p class="text-xs lg:text-sm">+356 2144 4324</p>
+                        <p class="text-xs lg:text-sm">30, Triq Il-Gdida, Qormi</p>
+                    </div>
+                </div>
+                <div class="flex-1 mt-4 md:mt-0">
+                    <div
+                        class="flex flex-col md:flex-row justify-between border-b-none md:border-b pb-0 md:pb-5 lg:pb-10 mb-4 lg:mb-8">
+                        <div class="flex  flex-wrap md:flex-none flex-row gap-3 md:gap-7">
+                            <a href="#"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Story</a>
+                            <a href="#"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Brands</a>
+                            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">News</a>
+                            <a href="#"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Careers</a>
+                            <a href="#" class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Reach
+                                us</a>
+                        </div>
+                        <div class="hidden md:flex gap-4">
+                            <a href="#" class="hover:text-white"><i class="text-2xl fab fa-facebook"></i></a>
+                            <a href="#" class="hover:text-white"><i class="text-2xl fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class="text-2xl fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-white"><i class="text-2xl fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class=" flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div
+                            class="flex flex-col md:flex-row space-y-3 md:space-y-0 space-x-0 md:space-x-1 lg:space-x-4">
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Privacy policy</a>
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Terms and conditions</a>
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Cookie policy</a>
+                        </div>
+                        <div class="text-xs lg:text-sm ">
+                            <p class="mt-3 md:mt-0">© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
+                            <p class="mt-3 md:mt-0">Designed & Developed by The Concept Stadium</p>
+                        </div>
+                        <div class="md:hidden  mt-3 flex gap-5">
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-facebook"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
 
-      </div>
-    </div>
+                </div>
+            </div>
 
 
-  </footer>
+        </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const toggleButton = document.querySelector('.dropdown-toggle');
