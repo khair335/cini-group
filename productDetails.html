@@ -1,42 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="./assets/styles/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     .slick-slide img {
       display: inline-block;
     }
   </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "custom-blue": '#283a97',
+            "custom-blue-2": '#5160a9',
+            "custom-gray": '#d1dade',
+            "custom-gray-2": '#f7f7f7',
+          },
+          screens: {
+
+          },
+          maxWidth: {
+            '2px': '2px',
+            '120px': '120px',
+            '160px': '160px',
+            '180px': '180px',
+            '190px': '190px',
+            '280px': '280px',
+
+            '346px': '346px',
+            '400px': '400px',
+            '480px': '480px',
+            '528px': '528px',
+            '500px': '500px',
+            '650px': '650px',
+            '660px': '660px',
+            '700px': '700px',
+            '930px': '930px',
+            '1000px': '1000px',
+            '1200px': '1200px',
+            // You can add more custom max-width values here if needed
+          },
+          borderRadius: {
+            'full': '9999px',
+            '30px': '30px',
+            '45px': '45px',
+            // Add more custom border-radius values as needed
+          },
+          maxHeight: {
+            '1.5': '1px',
+            '500px': '500px',
+            '310px': '310px',
+            '480px': '480px',
+            '528px': '528px'
+
+          },
+          spacing: {
+            '20%': '20%',
+            '40%': '40%',
+            '45%': '45%',
+            '50%': '50%',
+            '60%': '60%',
+            '70%': '70%',
+            '73%': '73%',
+            '75%': '75%',
+            '85%': '85%',
+            '90%': '90%',
+            '1.5': '6px'
+
+            // Add more custom spacing values as needed
+          },
+          fontSize: {
+
+            '40px': '40px',
+            '52px': '52px',
+            '60px': '60px',
+            '70px': ['4.375rem', '1.2'],
+            // Add more custom font sizes as needed
+          },
+          lineHeight: {
+            '1': '1',
+            '1.2': '1.2',
+            '44': '44px',
+            '56': '56px',
+          },
+        }
+      }
+    }
+  </script>
 </head>
+
 <body class="bg-gray-50">
   <!-- Header -->
-  <header class="bg-blue-900 text-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="">
-        <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
+  <header class="bg-white text-white p-4 relative z-10">
+    <div class="max-w-700px lg:max-w-930px xl:max-w-1200px mx-auto flex justify-between items-center relative">
+      <a href="#">
+        <img src="./assets/CiniLogoBlue.svg" alt="Cini Group Logo" class="h-10">
       </a>
-      <nav class="space-x-4 flex flex-1 justify-end items-center">
-        <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Story</a>
-        <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Brands</a>
-        <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">News</a>
-        <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Careers</a>
-        <a href="#"
-          class="text-xl font-medium border-transparent border-2 hover:border-b-2 hover:border-b-white transition duration-300 ease-in-out">Reach
+      <nav
+        class="space-x-4 hidden lg:flex flex-1 justify-end items-center nav-links absolute top-10 lg:top-[unset] right-0 lg:right-[unset] lg:relative  bg-white shadow-xl lg:shadow-none">
+         <a href="/#story"
+          class="text-xl text-custom-blue font-semibold border-transparent border-2 hover:border-b-2 hover:border-b-custom-blue transition duration-300 ease-in-out">Story</a>
+        <a href="./brands.html"
+          class="text-xl text-custom-blue font-semibold border-transparent border-2 hover:border-b-2 hover:border-b-custom-blue transition duration-300 ease-in-out">Brands</a>
+        <a href="/#news"
+          class="text-xl text-custom-blue font-semibold border-transparent border-2 hover:border-b-2 hover:border-b-custom-blue transition duration-300 ease-in-out">News</a>
+        <a href="/#careers"
+          class="text-xl text-custom-blue font-semibold border-transparent border-2 hover:border-b-2 hover:border-b-custom-blue transition duration-300 ease-in-out">Careers</a>
+        <a href="/#reach_us"
+          class="text-xl text-custom-blue font-semibold border-transparent border-2 hover:border-b-2 hover:border-b-custom-blue transition duration-300 ease-in-out">Reach
           us</a>
-
-        <div class="dropdown max-w-[180px] w-full">
-          <button class="dropdown-toggle max-w-[180px] w-full h-11 justify-center">
+        <div class="dropdown max-w-180px w-full">
+          <button class="dropdown-toggle max-w-180px w-full h-11 justify-center bg-custom-blue text-white">
             Catalogues
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(40,58,151,1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
               <path d="M12 14L8 10H16L12 14Z"></path>
             </svg>
           </button>
@@ -44,19 +132,19 @@
             <a class="flex items-center justify-between group relative" href="#">
               <div class=" transition-colors duration-300">Catalogue 1</div>
               <div
-                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                class="group-hover:w-10 w-0 h-0.5 bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
               </div>
             </a>
             <a class="flex items-center justify-between group relative" href="#">
               <div class=" transition-colors duration-300">Catalogue 2</div>
               <div
-                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                class="group-hover:w-10 w-0 h-0.5 bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
               </div>
             </a>
             <a class="flex items-center justify-between group relative" href="#">
               <div class=" transition-colors duration-300">Catalogue 3</div>
               <div
-                class="group-hover:w-10 w-0 h-[2px] bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
+                class="group-hover:w-10 w-0 h-0.5 bg-white absolute rounded-md bottom-1/2 right-4 transition-all duration-300">
               </div>
             </a>
 
@@ -64,157 +152,313 @@
 
         </div>
       </nav>
-
+      <button class="hamburger-menu text-custom-blue block lg:hidden focus:outline-none relative z-10"
+        onclick="toggleMenu()">
+        <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+          fill="currentColor">
+          <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+        </svg>
+        <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+          fill="currentColor">
+          <path
+            d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12l7.7929 7.7928L19.793 21.2071 12.0001 13.4142 4.20718 21.2071 2.79297 19.7928 10.5859 12z">
+          </path>
+        </svg>
+      </button>
     </div>
   </header>
-  <div class="container mx-auto py-12">
+  <div class="max-w-700px lg:max-w-930px xl:max-w-1000px  mx-auto py-12 px-5">
     <!-- Product Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <!-- Product Images Slider -->
-      <div>
-        <div class="main-slider">
-          <div><img src="/assets/Images/ProductImage1@2x.jpg" alt="Product Image 1" class="w-full h-64 object-contain"></div>
-          <div><img src="image2.jpg" alt="Product Image 2" class="w-full h-64 object-cover"></div>
-          <div><img src="https://placehold.co/500x600" alt="Product Image 3" class="w-full h-64 object-cover"></div>
-          <div><img src="image4.jpg" alt="Product Image 4" class="w-full h-64 object-cover"></div>
+      <div class="product-slider">
+        <div class="main-slider max-w-full lg:max-w-500px w-full  max-h-310px md:max-h-480px h-full">
+          <div class="rounded-3xl"><img src="/assets/Images/ProductImage1@2x.jpg" alt="Product Image 1"
+              class="w-full h-full max-h-310px md:max-h-480px object-cover rounded-3xl bg-white"></div>
+          <div class="rounded-3xl"><img src="/assets/Images/ProductImage2@2x.jpg" alt="Product Image 1"
+              class="w-full h-full max-h-310px md:max-h-480px object-cover rounded-3xl bg-white"></div>
+          <div class="rounded-3xl"><img src="/assets/Images/ProductImage3@2x.jpg" alt="Product Image 1"
+              class="w-full h-full max-h-310px md:max-h-480px object-cover rounded-3xl bg-white"></div>
+          <div class="rounded-3xl"><img src="/assets/Images/ProductImage4@2x.jpg" alt="Product Image 1"
+              class="w-full h-full max-h-310px md:max-h-480px object-cover rounded-3xl bg-white"></div>
+          <div class="rounded-3xl"><img src="/assets/Images/ProductImage5@2x.jpg" alt="Product Image 1"
+              class="w-full h-full max-h-310px md:max-h-480px object-cover rounded-3xl bg-white"></div>
+
         </div>
-        <div class="thumbnail-slider mt-4">
-          <div><img src="https://placehold.co/400x600" alt="Product Thumbnail 1" class="w-16 h-16 object-cover"></div>
-          <div><img src="image2.jpg" alt="Product Thumbnail 2" class="w-16 h-16 object-cover"></div>
-          <div><img src="https://placehold.co/500x600" alt="Product Thumbnail 3" class="w-16 h-16 object-cover"></div>
-          <div><img src="image4.jpg" alt="Product Thumbnail 4" class="w-16 h-16 object-cover"></div>
+        <div class="thumbnail-slider mt-4 max-w-85% lg:max-w-346px xl:max-w-400px w-full">
+          <div><img src="/assets/Images/ProductImage1@2x.jpg" alt="Product Thumbnail 1"
+              class="rounded-2xl w-20 h-20 object-cover">
+          </div>
+          <div><img src="/assets/Images/ProductImage2@2x.jpg" alt="Product Thumbnail 1"
+              class="rounded-2xl w-20 h-20 object-cover">
+          </div>
+          <div><img src="/assets/Images/ProductImage3@2x.jpg" alt="Product Thumbnail 1"
+              class="rounded-2xl w-20 h-20 object-cover">
+          </div>
+          <div><img src="/assets/Images/ProductImage4@2x.jpg" alt="Product Thumbnail 1"
+              class="rounded-2xl w-20 h-20 object-cover">
+          </div>
+          <div><img src="/assets/Images/ProductImage5@2x.jpg" alt="Product Thumbnail 1"
+              class="rounded-2xl w-20 h-20 object-cover">
+          </div>
+
         </div>
       </div>
 
       <!-- Product Information -->
       <div>
-        <h1 class="text-3xl font-bold">Product name goes here.</h1>
-        <p class="mt-4"><strong>SKU:</strong> 9108267619629323</p>
-        <p><strong>Net weight:</strong> 200g</p>
-        <p class="mt-4"><strong>Brand:</strong> Lamb brand</p>
-        <p><strong>Category:</strong> Flour</p>
-        <p class="mt-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo...</p>
-        <div class="flex space-x-4 mt-4">
-          <a href="#" class="hover:text-blue-700"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="hover:text-blue-700"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="hover:text-blue-700"><i class="fab fa-tiktok"></i></a>
+        <h1 class="text-xl md:text-3xl font-bold text-custom-blue">Product name goes here.</h1>
+
+        <div class="flex justify-between items-center mt-5 pb-5 border-b-2 border-gray-200">
+          <div>
+            <div class="flex gap-14  md:gap-20 items-center ">
+              <p class="font-bold text-custom-blue text-sm md:text-base">SKU</p>
+              <p class="font-light text-custom-blue text-sm md:text-base">9108267619629323</p>
+            </div>
+            <div class="flex  gap-4 md:gap-9 items-center mt-3">
+              <p class="font-bold text-custom-blue text-sm md:text-base">Net weight</p>
+              <p class="font-light text-custom-blue text-sm md:text-base">200g</p>
+            </div>
+          </div>
+          <img src="/assets/Logos/BrandLamb@2x.png" class="h-10 md:h-14" alt="" srcset="">
         </div>
-        <button class="mt-6 bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Information sheet</button>
+
+        <div class="pt-5 flex justify-between ">
+          <div class="flex w-40% justify-between">
+            <div>
+
+              <p class="font-bold text-custom-blue text-sm md:text-base">Brand</p>
+              <p class="font-light text-custom-blue text-xs md:text-sm">Lamb brand</p>
+            </div>
+            <div>
+
+              <p class="font-bold text-custom-blue text-sm md:text-base">Category</p>
+              <p class="font-light text-custom-blue text-xs md:text-sm">Flour</p>
+            </div>
+          </div>
+          <div class="flex w-1/2 justify-between">
+            <div>
+
+              <p class="font-bold text-custom-blue text-sm md:text-base">Share</p>
+
+            </div>
+            <div class="flex gap-4 md:gap-6">
+              <a href="#" class="text-custom-blue"><i class="text-lg md:text-2xl fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-custom-blue"><i class="text-lg md:text-2xl fab fa-instagram"></i></a>
+              <a href="#" class="text-custom-blue"><i class="text-lg md:text-2xl fab fa-linkedin"></i></a>
+              <a href="#" class="text-custom-blue"><i class="text-lg md:text-2xl fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class=" pt-8 text-sm">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+          numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+        <p class=" pt-3 text-sm">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+          numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </p>
+
+        <button
+          class="bg-custom-blue border max-w-full md:max-w-56  border-custom-blue mt-5 text-white   h-10 rounded-full hover:bg-white hover:text-custom-blue hover:border-custom-blue flex justify-center items-center w-full transition-colors duration-300 ease-in-out">
+          <p class="-mt-1"> Information sheet
+            <span class="text-xl pl-3">&rarr;</span>
+          </p>
+        </button>
       </div>
     </div>
 
-    <!-- Product Details -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-      <div>
-        <h2 class="text-xl font-bold">Packaging material</h2>
-        <p>Recycled plastic</p>
+
+
+  </div>
+  <!-- Product Details -->
+  <div class="bg-white">
+    <div class="max-w-700px lg:max-w-930px xl:max-w-1000px px-5 mx-auto py-8 md:py-12 bg-white my-10 text-custom-blue">
+      <div class="flex flex-col md:flex-row gap-5 md:gap-16 items-center">
+        <div class="flex flex-col gap-5 w-full md:w-40%">
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-50%">Packaging material</h2>
+            <p class="text-sm md:text-base flex-1">Recycled plastic</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-50%">Shelf life</h2>
+            <p class="text-sm md:text-base flex-1">1 year</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-50%">Product dimensions</h2>
+            <p class="text-sm md:text-base flex-1">15x25x8cm</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-50%">Products per case</h2>
+            <p class="text-sm md:text-base flex-1">10</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-50%">Weight per case</h2>
+            <p class="text-sm md:text-base flex-1">2kg</p>
+          </div>
+        </div>
+        <div class="h-48 w-[1px] bg-gray-400 hidden md:block"></div>
+       <div class="flex flex-col gap-5 w-full md:w-40%">
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-70%">Cases per pallet layer</h2>
+            <p class="text-sm md:text-base flex-1">4</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-70%">Cases per half pallet</h2>
+            <p class="text-sm md:text-base flex-1">6</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-70%">Cases per full pallet</h2>
+            <p class="text-sm md:text-base flex-1">12</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-70%">Cases per full 20ft container</h2>
+            <p class="text-sm md:text-base flex-1">192</p>
+          </div>
+          <div class="flex items-center gap-5">
+            <h2 class="text-base md:text-lg font-bold w-60% md:w-70%">Cases per full 40ft container</h2>
+            <p class="text-sm md:text-base flex-1">384</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2 class="text-xl font-bold">Shelf life</h2>
-        <p>1 year</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Product dimensions</h2>
-        <p>15x25x8cm</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Products per case</h2>
-        <p>10</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Weight per case</h2>
-        <p>2kg</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Cases per pallet layer</h2>
-        <p>4</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Cases per half pallet</h2>
-        <p>6</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Cases per full pallet</h2>
-        <p>12</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Cases per full 20ft container</h2>
-        <p>192</p>
-      </div>
-      <div>
-        <h2 class="text-xl font-bold">Cases per full 40ft container</h2>
-        <p>384</p>
-      </div>
+
+
     </div>
   </div>
-  <footer class=" text-white p-4 mt-0 pt-7" style="background-color: #283A97;">
-    <div class="container mx-auto flex" style="max-width: 1280px;">
-        <div class="text-sm " style="width: 25%;">
-            <div class="flex items-center space-x-4">
-                <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-10">
 
-            </div>
-           <div class="pt-5 pl-20">
-             <p>info@cini.com</p>
-            <p>+356 2144 4324</p>
-            <p>30, Triq Il-Gdida, Qormi</p></div>
-        </div>
-        <div class="flex-1">
-            <div class="flex justify-between border-b pb-10 mb-8">
-              <div class="flex gap-7">
-                <a href="#" class="hover:text-white text-white">Story</a>
-                <a href="#" class="hover:text-white text-white">Brands</a>
-                <a href="#" class="hover:text-white text-white">News</a>
-                <a href="#" class="hover:text-white text-white">Careers</a>
-                <a href="#" class="hover:text-white text-white">Reach us</a>
-              </div>
-              <div>
-                 <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="hover:text-white"><i class="fab fa-tiktok"></i></a></div>
-            </div>
-            <div class=" flex justify-between items-center">
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-white">Privacy policy</a>
-                    <a href="#" class="hover:text-white">Terms and conditions</a>
-                    <a href="#" class="hover:text-white">Cookie policy</a>
+   <footer class=" text-white p-4  pt-7 flex justify-center items-center bg-custom-blue" >
+            <div class="max-w-700px lg:max-w-930px xl:max-w-1200px w-full mx-auto flex flex-col  md:flex-row">
+                <div class="text-sm " style="width: 25%;">
+                    <div class="flex items-center space-x-4">
+                        <img src="./assets/CiniLogo.svg" alt="Cini Group Logo" class="h-8 lg:h-10">
+
+                    </div>
+                    <div class="pt-5 pl-20 hidden md:block">
+                        <p class="text-xs lg:text-sm">info@cini.com</p>
+                        <p class="text-xs lg:text-sm">+356 2144 4324</p>
+                        <p class="text-xs lg:text-sm">30, Triq Il-Gdida, Qormi</p>
+                    </div>
                 </div>
-                <div class="text-sm">
-                    <p>© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
-                    <p>Designed & Developed by The Concept Stadium</p>
+                <div class="flex-1 mt-4 md:mt-0">
+                    <div
+                        class="flex flex-col md:flex-row justify-between border-b-none md:border-b pb-0 md:pb-5 lg:pb-10 mb-4 lg:mb-8">
+                        <div class="flex  flex-wrap md:flex-none flex-row gap-3 md:gap-7">
+                            <a href="/#story"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Story</a>
+                            <a href="/brands.html"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Brands</a>
+                            <a href="/#news" class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">News</a>
+                            <a href="/#careers"
+                                class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Careers</a>
+                            <a href="/#reach_us" class="hover:text-white text-white text-sm lg:text-base w-40% md:w-max">Reach
+                                us</a>
+                        </div>
+                        <div class="hidden md:flex gap-4">
+                            <a href="#" class="hover:text-white"><i class="text-2xl fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-white"><i class="text-2xl fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class="text-2xl fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-white"><i class="text-2xl fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class=" flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div
+                            class="flex flex-col md:flex-row space-y-3 md:space-y-0 space-x-0 md:space-x-1 lg:space-x-4">
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Privacy policy</a>
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Terms and conditions</a>
+                            <a href="#" class="hover:text-white text-sm lg:text-base">Cookie policy</a>
+                        </div>
+                        <div class=" text-right">
+                            <p class="text-xs lg:text-xs mt-3 md:mt-0 font-bold ">© 2024 CINI GROUP. ALL RIGHTS RESERVED</p>
+                            <p class="text-xs lg:text-sm mt-3 md:mt-0 font-light">Designed & Developed by The Concept Stadium</p>
+                        </div>
+                        <div class="md:hidden  mt-3 flex gap-5">
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-white"><i class=" text-2xl  fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-        </div>
-    </div>
 
-
-</footer>
+        </footer>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
-    $(document).ready(function(){
-      $('.main-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        asNavFor: '.thumbnail-slider'
-      });
+    $(document).ready(function () {
+       $('.main-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.thumbnail-slider',
+      responsive: [
+        {
+          breakpoint: 768, // medium devices (tablets, iPads)
+          settings: {
+            // slidesToShow: 1,
+          }
+        },
+        {
+          breakpoint: 992, // large devices (desktops)
+          settings: {
+            // slidesToShow: 1,
+          }
+        },
+        {
+          breakpoint: 1200, // extra large devices (large desktops, TVs)
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
       $('.thumbnail-slider').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.main-slider',
-        dots: true,
+        dots: false,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+        {
+          breakpoint: 535, // medium devices (tablets, iPads)
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 767, // medium devices (tablets, iPads)
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 1024, // large devices (desktops)
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 1280, // extra large devices (large desktops, TVs)
+          settings: {
+            slidesToShow: 2.5,
+          }
+        }
+      ]
       });
     });
   </script>
-    <script>
+   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const toggleButton = document.querySelector('.dropdown-toggle');
       const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -229,9 +473,18 @@
         }
       });
     });
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      const hamburgerIcon = document.querySelector('.hamburger-icon');
+      const closeIcon = document.querySelector('.close-icon');
 
+      navLinks.classList.toggle('active');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    }
 
   </script>
 
 </body>
+
 </html>
