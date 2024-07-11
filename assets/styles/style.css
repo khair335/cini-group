@@ -189,7 +189,7 @@ background: rgb(0,0,0);
 .show {
     display: block;
 }
-/*
+
 @media (max-width: 1380px) {
     .main-title {
     font-size: 50px;
@@ -201,4 +201,8 @@ background: rgb(0,0,0);
     background-position: 154%;
 
 }
-} */
+}
+
+.arrow-left-svg{
+
+}
